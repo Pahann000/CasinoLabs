@@ -84,13 +84,13 @@
     <Compile Include="StaffForm.Designer.cs">
       <DependentUpon>StaffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="КазиноDataSet.cs">
-      <DependentUpon>КазиноDataSet.xsd</DependentUpon>
+    <Compile Include="КазиноDataSet1.cs">
+      <DependentUpon>КазиноDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="КазиноDataSet.Designer.cs">
+    <Compile Include="КазиноDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>КазиноDataSet.xsd</DependentUpon>
+      <DependentUpon>КазиноDataSet1.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
@@ -129,16 +129,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="КазиноDataSet.xsc">
-      <DependentUpon>КазиноDataSet.xsd</DependentUpon>
+    <None Include="КазиноDataSet1.xsc">
+      <DependentUpon>КазиноDataSet1.xsd</DependentUpon>
     </None>
-    <None Include="КазиноDataSet.xsd">
+    <None Include="КазиноDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>КазиноDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>КазиноDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="КазиноDataSet.xss">
-      <DependentUpon>КазиноDataSet.xsd</DependentUpon>
+    <None Include="КазиноDataSet1.xss">
+      <DependentUpon>КазиноDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

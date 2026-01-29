@@ -34,9 +34,19 @@ namespace CasinoLabs
 
         private void gameBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.gameBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.казиноDataSet);
+
+            try
+            {
+                this.Validate();
+                this.gameBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.казиноDataSet);
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Ошибка при заполнении игр", "Ошибка",
+               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
 
         }
 
@@ -112,6 +122,16 @@ namespace CasinoLabs
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                 gameBindingSource.Position = 0;
             }
+        }
+
+        private void gameDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+        {
+            MessageBox.Show("Ошибка ввода данных: " + e.Exception.Message,
+                            "Ошибка",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Warning);
+
+            e.ThrowException = false;
         }
 
         private void checkBoxFind_CheckedChanged(object sender, EventArgs e)

@@ -80,5 +80,21 @@ namespace CasinoLabs
 
             e.ThrowException = false;
         }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                playerBindingSource.AddNew();
+
+                MessageBox.Show("Новый игрок добавлен в таблицу. Заполните данные.",
+                               "Добавлено", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка: {ex.Message}", "Ошибка",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

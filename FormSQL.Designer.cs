@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,56 +42,55 @@
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.tabPageDML = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.dataGridViewChange = new System.Windows.Forms.DataGridView();
             this.groupBoxDMLOperations = new System.Windows.Forms.GroupBox();
-            this.textBoxGameId = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBoxDMLButtons = new System.Windows.Forms.GroupBox();
-            this.buttonInsert = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonTransaction = new System.Windows.Forms.Button();
             this.groupBoxGameData = new System.Windows.Forms.GroupBox();
-            this.textBoxTableId = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxDealerId = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBoxStartTime = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBoxEndTime = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxGameConditions = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.buttonClear = new System.Windows.Forms.Button();
             this.buttonNow = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxGameConditions = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxEndTime = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxStartTime = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxDealerId = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxTableId = new System.Windows.Forms.TextBox();
+            this.groupBoxDMLButtons = new System.Windows.Forms.GroupBox();
+            this.buttonUpdate = new System.Windows.Forms.Button();
+            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonInsert = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxGameId = new System.Windows.Forms.TextBox();
+            this.dataGridViewChange = new System.Windows.Forms.DataGridView();
             this.tabPageSubqueries = new System.Windows.Forms.TabPage();
             this.groupBoxSubqueries = new System.Windows.Forms.GroupBox();
-            this.dataGridViewSubquery = new System.Windows.Forms.DataGridView();
-            this.buttonSubquery = new System.Windows.Forms.Button();
-            this.groupBoxSubqueryType = new System.Windows.Forms.GroupBox();
-            this.radioButtonCorrelated = new System.Windows.Forms.RadioButton();
-            this.radioButtonNonCorrelated = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBoxSubPlayerName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBoxSubqueryType = new System.Windows.Forms.GroupBox();
+            this.radioButtonNonCorrelated = new System.Windows.Forms.RadioButton();
+            this.radioButtonCorrelated = new System.Windows.Forms.RadioButton();
+            this.buttonSubquery = new System.Windows.Forms.Button();
+            this.dataGridViewSubquery = new System.Windows.Forms.DataGridView();
             this.tabPageAdvanced = new System.Windows.Forms.TabPage();
             this.groupBoxAdvancedSearch = new System.Windows.Forms.GroupBox();
-            this.dataGridViewFSelect = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxPlayerID = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxPlayerName = new System.Windows.Forms.TextBox();
+            this.buttonF_select = new System.Windows.Forms.Button();
+            this.groupBoxDetails = new System.Windows.Forms.GroupBox();
+            this.radioButtonDet_Passport = new System.Windows.Forms.RadioButton();
+            this.radioButtonDet_Phone = new System.Windows.Forms.RadioButton();
             this.groupBoxOptions = new System.Windows.Forms.GroupBox();
             this.checkBoxOrder = new System.Windows.Forms.CheckBox();
-            this.groupBoxDetails = new System.Windows.Forms.GroupBox();
-            this.radioButtonDet_Phone = new System.Windows.Forms.RadioButton();
-            this.radioButtonDet_Passport = new System.Windows.Forms.RadioButton();
-            this.buttonF_select = new System.Windows.Forms.Button();
-            this.textBoxPlayerName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxPlayerID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridViewFSelect = new System.Windows.Forms.DataGridView();
             this.tabPageSimple = new System.Windows.Forms.TabPage();
             this.groupBoxSimpleQueries = new System.Windows.Forms.GroupBox();
-            this.radioButtonPlayers = new System.Windows.Forms.RadioButton();
-            this.radioButtonGames = new System.Windows.Forms.RadioButton();
-            this.radioButtonGameDetails = new System.Windows.Forms.RadioButton();
             this.dataGridViewSelect = new System.Windows.Forms.DataGridView();
+            this.radioButtonGameDetails = new System.Windows.Forms.RadioButton();
+            this.radioButtonGames = new System.Windows.Forms.RadioButton();
+            this.radioButtonPlayers = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -100,19 +99,19 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChange)).BeginInit();
             this.groupBoxDMLOperations.SuspendLayout();
-            this.groupBoxDMLButtons.SuspendLayout();
             this.groupBoxGameData.SuspendLayout();
+            this.groupBoxDMLButtons.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChange)).BeginInit();
             this.tabPageSubqueries.SuspendLayout();
             this.groupBoxSubqueries.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubquery)).BeginInit();
             this.groupBoxSubqueryType.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubquery)).BeginInit();
             this.tabPageAdvanced.SuspendLayout();
             this.groupBoxAdvancedSearch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFSelect)).BeginInit();
-            this.groupBoxOptions.SuspendLayout();
             this.groupBoxDetails.SuspendLayout();
+            this.groupBoxOptions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFSelect)).BeginInit();
             this.tabPageSimple.SuspendLayout();
             this.groupBoxSimpleQueries.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSelect)).BeginInit();
@@ -127,7 +126,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1467, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1570, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -168,17 +167,18 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 769);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1467, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1570, 26);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(1312, 20);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(1415, 20);
             this.toolStripStatusLabel.Spring = true;
             this.toolStripStatusLabel.Text = "Готово";
             this.toolStripStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripStatusLabel.Click += new System.EventHandler(this.toolStripStatusLabel_Click);
             // 
             // toolStripProgressBar
             // 
@@ -215,22 +215,6 @@
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // dataGridViewChange
-            // 
-            this.dataGridViewChange.AllowUserToAddRows = false;
-            this.dataGridViewChange.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridViewChange.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewChange.ColumnHeadersHeight = 29;
-            this.dataGridViewChange.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewChange.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewChange.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewChange.Name = "dataGridViewChange";
-            this.dataGridViewChange.ReadOnly = true;
-            this.dataGridViewChange.RowHeadersWidth = 51;
-            this.dataGridViewChange.Size = new System.Drawing.Size(968, 712);
-            this.dataGridViewChange.TabIndex = 0;
-            // 
             // groupBoxDMLOperations
             // 
             this.groupBoxDMLOperations.Controls.Add(this.groupBoxGameData);
@@ -246,81 +230,6 @@
             this.groupBoxDMLOperations.TabIndex = 0;
             this.groupBoxDMLOperations.TabStop = false;
             this.groupBoxDMLOperations.Text = "Операции с играми";
-            // 
-            // textBoxGameId
-            // 
-            this.textBoxGameId.Location = new System.Drawing.Point(133, 39);
-            this.textBoxGameId.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxGameId.Name = "textBoxGameId";
-            this.textBoxGameId.Size = new System.Drawing.Size(105, 22);
-            this.textBoxGameId.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 43);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(57, 16);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "ID игры:";
-            // 
-            // groupBoxDMLButtons
-            // 
-            this.groupBoxDMLButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxDMLButtons.Controls.Add(this.buttonTransaction);
-            this.groupBoxDMLButtons.Controls.Add(this.buttonUpdate);
-            this.groupBoxDMLButtons.Controls.Add(this.buttonDelete);
-            this.groupBoxDMLButtons.Controls.Add(this.buttonInsert);
-            this.groupBoxDMLButtons.Location = new System.Drawing.Point(27, 468);
-            this.groupBoxDMLButtons.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBoxDMLButtons.Name = "groupBoxDMLButtons";
-            this.groupBoxDMLButtons.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxDMLButtons.Size = new System.Drawing.Size(428, 185);
-            this.groupBoxDMLButtons.TabIndex = 2;
-            this.groupBoxDMLButtons.TabStop = false;
-            this.groupBoxDMLButtons.Text = "Операции:";
-            // 
-            // buttonInsert
-            // 
-            this.buttonInsert.Location = new System.Drawing.Point(27, 37);
-            this.buttonInsert.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonInsert.Name = "buttonInsert";
-            this.buttonInsert.Size = new System.Drawing.Size(160, 37);
-            this.buttonInsert.TabIndex = 0;
-            this.buttonInsert.Text = "Добавить игру";
-            this.buttonInsert.UseVisualStyleBackColor = true;
-            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Location = new System.Drawing.Point(27, 86);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(160, 37);
-            this.buttonDelete.TabIndex = 1;
-            this.buttonDelete.Text = "Удалить игру";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Location = new System.Drawing.Point(200, 37);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(160, 37);
-            this.buttonUpdate.TabIndex = 2;
-            this.buttonUpdate.Text = "Обновить игру";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // buttonTransaction
-            // 
-            this.buttonTransaction.Location = new System.Drawing.Point(0, 0);
-            this.buttonTransaction.Name = "buttonTransaction";
-            this.buttonTransaction.Size = new System.Drawing.Size(75, 23);
-            this.buttonTransaction.TabIndex = 0;
             // 
             // groupBoxGameData
             // 
@@ -347,96 +256,16 @@
             this.groupBoxGameData.TabStop = false;
             this.groupBoxGameData.Text = "Данные игры:";
             // 
-            // textBoxTableId
+            // buttonNow
             // 
-            this.textBoxTableId.Location = new System.Drawing.Point(133, 58);
-            this.textBoxTableId.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxTableId.Name = "textBoxTableId";
-            this.textBoxTableId.Size = new System.Drawing.Size(105, 22);
-            this.textBoxTableId.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 62);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "ID стола:";
-            // 
-            // textBoxDealerId
-            // 
-            this.textBoxDealerId.Location = new System.Drawing.Point(133, 107);
-            this.textBoxDealerId.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxDealerId.Name = "textBoxDealerId";
-            this.textBoxDealerId.Size = new System.Drawing.Size(105, 22);
-            this.textBoxDealerId.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 111);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 16);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "ID крупье:";
-            // 
-            // textBoxStartTime
-            // 
-            this.textBoxStartTime.Location = new System.Drawing.Point(133, 156);
-            this.textBoxStartTime.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxStartTime.Name = "textBoxStartTime";
-            this.textBoxStartTime.Size = new System.Drawing.Size(265, 22);
-            this.textBoxStartTime.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 160);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 16);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Время начала:";
-            // 
-            // textBoxEndTime
-            // 
-            this.textBoxEndTime.Location = new System.Drawing.Point(133, 206);
-            this.textBoxEndTime.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxEndTime.Name = "textBoxEndTime";
-            this.textBoxEndTime.Size = new System.Drawing.Size(265, 22);
-            this.textBoxEndTime.TabIndex = 6;
-            this.textBoxEndTime.Text = "2024-01-01 00:00:00";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 209);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 16);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Время конца:";
-            // 
-            // textBoxGameConditions
-            // 
-            this.textBoxGameConditions.Location = new System.Drawing.Point(133, 255);
-            this.textBoxGameConditions.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxGameConditions.Name = "textBoxGameConditions";
-            this.textBoxGameConditions.Size = new System.Drawing.Size(265, 22);
-            this.textBoxGameConditions.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 258);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 16);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Условия:";
+            this.buttonNow.Location = new System.Drawing.Point(307, 111);
+            this.buttonNow.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonNow.Name = "buttonNow";
+            this.buttonNow.Size = new System.Drawing.Size(100, 28);
+            this.buttonNow.TabIndex = 11;
+            this.buttonNow.Text = "Сейчас";
+            this.buttonNow.UseVisualStyleBackColor = true;
+            this.buttonNow.Click += new System.EventHandler(this.buttonNow_Click);
             // 
             // buttonClear
             // 
@@ -449,16 +278,179 @@
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
-            // buttonNow
+            // label8
             // 
-            this.buttonNow.Location = new System.Drawing.Point(307, 111);
-            this.buttonNow.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonNow.Name = "buttonNow";
-            this.buttonNow.Size = new System.Drawing.Size(100, 28);
-            this.buttonNow.TabIndex = 11;
-            this.buttonNow.Text = "Сейчас";
-            this.buttonNow.UseVisualStyleBackColor = true;
-            this.buttonNow.Click += new System.EventHandler(this.buttonNow_Click);
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(13, 258);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 16);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Условия:";
+            // 
+            // textBoxGameConditions
+            // 
+            this.textBoxGameConditions.Location = new System.Drawing.Point(133, 255);
+            this.textBoxGameConditions.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGameConditions.Name = "textBoxGameConditions";
+            this.textBoxGameConditions.Size = new System.Drawing.Size(265, 22);
+            this.textBoxGameConditions.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 209);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 16);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Время конца:";
+            // 
+            // textBoxEndTime
+            // 
+            this.textBoxEndTime.Location = new System.Drawing.Point(133, 206);
+            this.textBoxEndTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEndTime.Name = "textBoxEndTime";
+            this.textBoxEndTime.Size = new System.Drawing.Size(265, 22);
+            this.textBoxEndTime.TabIndex = 6;
+            this.textBoxEndTime.Text = "2024-01-01 00:00:00";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(13, 160);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(102, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Время начала:";
+            // 
+            // textBoxStartTime
+            // 
+            this.textBoxStartTime.Location = new System.Drawing.Point(133, 156);
+            this.textBoxStartTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxStartTime.Name = "textBoxStartTime";
+            this.textBoxStartTime.Size = new System.Drawing.Size(265, 22);
+            this.textBoxStartTime.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 111);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 16);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "ID крупье:";
+            // 
+            // textBoxDealerId
+            // 
+            this.textBoxDealerId.Location = new System.Drawing.Point(133, 107);
+            this.textBoxDealerId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDealerId.Name = "textBoxDealerId";
+            this.textBoxDealerId.Size = new System.Drawing.Size(105, 22);
+            this.textBoxDealerId.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 62);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 16);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "ID стола:";
+            // 
+            // textBoxTableId
+            // 
+            this.textBoxTableId.Location = new System.Drawing.Point(133, 58);
+            this.textBoxTableId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxTableId.Name = "textBoxTableId";
+            this.textBoxTableId.Size = new System.Drawing.Size(105, 22);
+            this.textBoxTableId.TabIndex = 0;
+            // 
+            // groupBoxDMLButtons
+            // 
+            this.groupBoxDMLButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDMLButtons.Controls.Add(this.buttonUpdate);
+            this.groupBoxDMLButtons.Controls.Add(this.buttonDelete);
+            this.groupBoxDMLButtons.Controls.Add(this.buttonInsert);
+            this.groupBoxDMLButtons.Location = new System.Drawing.Point(27, 468);
+            this.groupBoxDMLButtons.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxDMLButtons.Name = "groupBoxDMLButtons";
+            this.groupBoxDMLButtons.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxDMLButtons.Size = new System.Drawing.Size(428, 185);
+            this.groupBoxDMLButtons.TabIndex = 2;
+            this.groupBoxDMLButtons.TabStop = false;
+            this.groupBoxDMLButtons.Text = "Операции:";
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Location = new System.Drawing.Point(200, 37);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(160, 37);
+            this.buttonUpdate.TabIndex = 2;
+            this.buttonUpdate.Text = "Обновить игру";
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(27, 86);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(160, 37);
+            this.buttonDelete.TabIndex = 1;
+            this.buttonDelete.Text = "Удалить игру";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonInsert
+            // 
+            this.buttonInsert.Location = new System.Drawing.Point(27, 37);
+            this.buttonInsert.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonInsert.Name = "buttonInsert";
+            this.buttonInsert.Size = new System.Drawing.Size(160, 37);
+            this.buttonInsert.TabIndex = 0;
+            this.buttonInsert.Text = "Добавить игру";
+            this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(27, 43);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 16);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "ID игры:";
+            // 
+            // textBoxGameId
+            // 
+            this.textBoxGameId.Location = new System.Drawing.Point(133, 39);
+            this.textBoxGameId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGameId.Name = "textBoxGameId";
+            this.textBoxGameId.Size = new System.Drawing.Size(105, 22);
+            this.textBoxGameId.TabIndex = 0;
+            // 
+            // dataGridViewChange
+            // 
+            this.dataGridViewChange.AllowUserToAddRows = false;
+            this.dataGridViewChange.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewChange.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewChange.ColumnHeadersHeight = 29;
+            this.dataGridViewChange.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewChange.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewChange.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewChange.Name = "dataGridViewChange";
+            this.dataGridViewChange.ReadOnly = true;
+            this.dataGridViewChange.RowHeadersWidth = 51;
+            this.dataGridViewChange.Size = new System.Drawing.Size(968, 712);
+            this.dataGridViewChange.TabIndex = 0;
             // 
             // tabPageSubqueries
             // 
@@ -488,35 +480,23 @@
             this.groupBoxSubqueries.TabStop = false;
             this.groupBoxSubqueries.Text = "Подзапросы для поиска игроков";
             // 
-            // dataGridViewSubquery
+            // textBoxSubPlayerName
             // 
-            this.dataGridViewSubquery.AllowUserToAddRows = false;
-            this.dataGridViewSubquery.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridViewSubquery.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewSubquery.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSubquery.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewSubquery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSubquery.Location = new System.Drawing.Point(27, 98);
-            this.dataGridViewSubquery.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewSubquery.Name = "dataGridViewSubquery";
-            this.dataGridViewSubquery.ReadOnly = true;
-            this.dataGridViewSubquery.RowHeadersWidth = 51;
-            this.dataGridViewSubquery.Size = new System.Drawing.Size(1408, 592);
-            this.dataGridViewSubquery.TabIndex = 0;
+            this.textBoxSubPlayerName.Location = new System.Drawing.Point(133, 43);
+            this.textBoxSubPlayerName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSubPlayerName.Name = "textBoxSubPlayerName";
+            this.textBoxSubPlayerName.Size = new System.Drawing.Size(265, 22);
+            this.textBoxSubPlayerName.TabIndex = 4;
             // 
-            // buttonSubquery
+            // label3
             // 
-            this.buttonSubquery.Location = new System.Drawing.Point(867, 37);
-            this.buttonSubquery.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonSubquery.Name = "buttonSubquery";
-            this.buttonSubquery.Size = new System.Drawing.Size(160, 31);
-            this.buttonSubquery.TabIndex = 1;
-            this.buttonSubquery.Text = "Выполнить подзапрос";
-            this.buttonSubquery.UseVisualStyleBackColor = true;
-            this.buttonSubquery.Click += new System.EventHandler(this.buttonSubquery_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 47);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 16);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "ФИО:";
             // 
             // groupBoxSubqueryType
             // 
@@ -531,18 +511,6 @@
             this.groupBoxSubqueryType.TabStop = false;
             this.groupBoxSubqueryType.Text = "Тип подзапроса:";
             // 
-            // radioButtonCorrelated
-            // 
-            this.radioButtonCorrelated.AutoSize = true;
-            this.radioButtonCorrelated.Location = new System.Drawing.Point(13, 25);
-            this.radioButtonCorrelated.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButtonCorrelated.Name = "radioButtonCorrelated";
-            this.radioButtonCorrelated.Size = new System.Drawing.Size(149, 20);
-            this.radioButtonCorrelated.TabIndex = 0;
-            this.radioButtonCorrelated.TabStop = true;
-            this.radioButtonCorrelated.Text = "Коррелированный";
-            this.radioButtonCorrelated.UseVisualStyleBackColor = true;
-            // 
             // radioButtonNonCorrelated
             // 
             this.radioButtonNonCorrelated.AutoSize = true;
@@ -555,23 +523,47 @@
             this.radioButtonNonCorrelated.Text = "Некоррелированный";
             this.radioButtonNonCorrelated.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // radioButtonCorrelated
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 47);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "ФИО:";
+            this.radioButtonCorrelated.AutoSize = true;
+            this.radioButtonCorrelated.Location = new System.Drawing.Point(13, 25);
+            this.radioButtonCorrelated.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButtonCorrelated.Name = "radioButtonCorrelated";
+            this.radioButtonCorrelated.Size = new System.Drawing.Size(149, 20);
+            this.radioButtonCorrelated.TabIndex = 0;
+            this.radioButtonCorrelated.TabStop = true;
+            this.radioButtonCorrelated.Text = "Коррелированный";
+            this.radioButtonCorrelated.UseVisualStyleBackColor = true;
             // 
-            // textBoxSubPlayerName
+            // buttonSubquery
             // 
-            this.textBoxSubPlayerName.Location = new System.Drawing.Point(133, 43);
-            this.textBoxSubPlayerName.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxSubPlayerName.Name = "textBoxSubPlayerName";
-            this.textBoxSubPlayerName.Size = new System.Drawing.Size(265, 22);
-            this.textBoxSubPlayerName.TabIndex = 4;
+            this.buttonSubquery.Location = new System.Drawing.Point(867, 37);
+            this.buttonSubquery.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSubquery.Name = "buttonSubquery";
+            this.buttonSubquery.Size = new System.Drawing.Size(160, 31);
+            this.buttonSubquery.TabIndex = 1;
+            this.buttonSubquery.Text = "Выполнить подзапрос";
+            this.buttonSubquery.UseVisualStyleBackColor = true;
+            this.buttonSubquery.Click += new System.EventHandler(this.buttonSubquery_Click);
+            // 
+            // dataGridViewSubquery
+            // 
+            this.dataGridViewSubquery.AllowUserToAddRows = false;
+            this.dataGridViewSubquery.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewSubquery.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewSubquery.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewSubquery.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewSubquery.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSubquery.Location = new System.Drawing.Point(27, 98);
+            this.dataGridViewSubquery.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewSubquery.Name = "dataGridViewSubquery";
+            this.dataGridViewSubquery.ReadOnly = true;
+            this.dataGridViewSubquery.RowHeadersWidth = 51;
+            this.dataGridViewSubquery.Size = new System.Drawing.Size(1408, 592);
+            this.dataGridViewSubquery.TabIndex = 0;
             // 
             // tabPageAdvanced
             // 
@@ -580,9 +572,9 @@
             this.tabPageAdvanced.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageAdvanced.Name = "tabPageAdvanced";
             this.tabPageAdvanced.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageAdvanced.Size = new System.Drawing.Size(1459, 712);
+            this.tabPageAdvanced.Size = new System.Drawing.Size(1562, 712);
             this.tabPageAdvanced.TabIndex = 1;
-            this.tabPageAdvanced.Text = "Расширенный поиск";
+            this.tabPageAdvanced.Text = "Полная запись SELECT";
             this.tabPageAdvanced.UseVisualStyleBackColor = true;
             // 
             // groupBoxAdvancedSearch
@@ -600,56 +592,85 @@
             this.groupBoxAdvancedSearch.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAdvancedSearch.Name = "groupBoxAdvancedSearch";
             this.groupBoxAdvancedSearch.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxAdvancedSearch.Size = new System.Drawing.Size(1451, 704);
+            this.groupBoxAdvancedSearch.Size = new System.Drawing.Size(1554, 704);
             this.groupBoxAdvancedSearch.TabIndex = 0;
             this.groupBoxAdvancedSearch.TabStop = false;
-            this.groupBoxAdvancedSearch.Text = "Расширенный поиск игроков";
+            this.groupBoxAdvancedSearch.Text = "Полная запись SELECT";
             // 
-            // dataGridViewFSelect
+            // label1
             // 
-            this.dataGridViewFSelect.AllowUserToAddRows = false;
-            this.dataGridViewFSelect.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridViewFSelect.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewFSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewFSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewFSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFSelect.Location = new System.Drawing.Point(27, 98);
-            this.dataGridViewFSelect.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewFSelect.Name = "dataGridViewFSelect";
-            this.dataGridViewFSelect.ReadOnly = true;
-            this.dataGridViewFSelect.RowHeadersWidth = 51;
-            this.dataGridViewFSelect.Size = new System.Drawing.Size(1408, 591);
-            this.dataGridViewFSelect.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "ФИО:";
             // 
-            // label2
+            // textBoxPlayerName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(400, 43);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ID игрока:";
+            this.textBoxPlayerName.Location = new System.Drawing.Point(93, 39);
+            this.textBoxPlayerName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPlayerName.Name = "textBoxPlayerName";
+            this.textBoxPlayerName.Size = new System.Drawing.Size(265, 22);
+            this.textBoxPlayerName.TabIndex = 6;
             // 
-            // textBoxPlayerID
+            // buttonF_select
             // 
-            this.textBoxPlayerID.Location = new System.Drawing.Point(493, 39);
-            this.textBoxPlayerID.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxPlayerID.Name = "textBoxPlayerID";
-            this.textBoxPlayerID.Size = new System.Drawing.Size(105, 22);
-            this.textBoxPlayerID.TabIndex = 2;
+            this.buttonF_select.Location = new System.Drawing.Point(800, 37);
+            this.buttonF_select.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonF_select.Name = "buttonF_select";
+            this.buttonF_select.Size = new System.Drawing.Size(160, 31);
+            this.buttonF_select.TabIndex = 5;
+            this.buttonF_select.Text = "Поиск игроков";
+            this.buttonF_select.UseVisualStyleBackColor = true;
+            this.buttonF_select.Click += new System.EventHandler(this.buttonF_select_Click);
+            // 
+            // groupBoxDetails
+            // 
+            this.groupBoxDetails.Controls.Add(this.radioButtonDet_Passport);
+            this.groupBoxDetails.Controls.Add(this.radioButtonDet_Phone);
+            this.groupBoxDetails.Location = new System.Drawing.Point(1000, 25);
+            this.groupBoxDetails.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBoxDetails.Name = "groupBoxDetails";
+            this.groupBoxDetails.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxDetails.Size = new System.Drawing.Size(298, 62);
+            this.groupBoxDetails.TabIndex = 4;
+            this.groupBoxDetails.TabStop = false;
+            this.groupBoxDetails.Text = "Дополнительная информация:";
+            // 
+            // radioButtonDet_Passport
+            // 
+            this.radioButtonDet_Passport.AutoSize = true;
+            this.radioButtonDet_Passport.Location = new System.Drawing.Point(133, 25);
+            this.radioButtonDet_Passport.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButtonDet_Passport.Name = "radioButtonDet_Passport";
+            this.radioButtonDet_Passport.Size = new System.Drawing.Size(161, 20);
+            this.radioButtonDet_Passport.TabIndex = 1;
+            this.radioButtonDet_Passport.TabStop = true;
+            this.radioButtonDet_Passport.Text = "Паспортные данные";
+            this.radioButtonDet_Passport.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDet_Phone
+            // 
+            this.radioButtonDet_Phone.AutoSize = true;
+            this.radioButtonDet_Phone.Location = new System.Drawing.Point(13, 25);
+            this.radioButtonDet_Phone.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButtonDet_Phone.Name = "radioButtonDet_Phone";
+            this.radioButtonDet_Phone.Size = new System.Drawing.Size(88, 20);
+            this.radioButtonDet_Phone.TabIndex = 0;
+            this.radioButtonDet_Phone.TabStop = true;
+            this.radioButtonDet_Phone.Text = "Телефон";
+            this.radioButtonDet_Phone.UseVisualStyleBackColor = true;
             // 
             // groupBoxOptions
             // 
             this.groupBoxOptions.Controls.Add(this.checkBoxOrder);
-            this.groupBoxOptions.Location = new System.Drawing.Point(1293, 25);
+            this.groupBoxOptions.Location = new System.Drawing.Point(1302, 25);
             this.groupBoxOptions.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxOptions.Name = "groupBoxOptions";
             this.groupBoxOptions.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxOptions.Size = new System.Drawing.Size(133, 62);
+            this.groupBoxOptions.Size = new System.Drawing.Size(245, 62);
             this.groupBoxOptions.TabIndex = 3;
             this.groupBoxOptions.TabStop = false;
             this.groupBoxOptions.Text = "Опции:";
@@ -665,71 +686,42 @@
             this.checkBoxOrder.Text = "Сортировать по количеству игр";
             this.checkBoxOrder.UseVisualStyleBackColor = true;
             // 
-            // groupBoxDetails
+            // textBoxPlayerID
             // 
-            this.groupBoxDetails.Controls.Add(this.radioButtonDet_Passport);
-            this.groupBoxDetails.Controls.Add(this.radioButtonDet_Phone);
-            this.groupBoxDetails.Location = new System.Drawing.Point(1000, 25);
-            this.groupBoxDetails.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBoxDetails.Name = "groupBoxDetails";
-            this.groupBoxDetails.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxDetails.Size = new System.Drawing.Size(267, 62);
-            this.groupBoxDetails.TabIndex = 4;
-            this.groupBoxDetails.TabStop = false;
-            this.groupBoxDetails.Text = "Дополнительная информация:";
+            this.textBoxPlayerID.Location = new System.Drawing.Point(493, 39);
+            this.textBoxPlayerID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPlayerID.Name = "textBoxPlayerID";
+            this.textBoxPlayerID.Size = new System.Drawing.Size(105, 22);
+            this.textBoxPlayerID.TabIndex = 2;
             // 
-            // radioButtonDet_Phone
+            // label2
             // 
-            this.radioButtonDet_Phone.AutoSize = true;
-            this.radioButtonDet_Phone.Location = new System.Drawing.Point(13, 25);
-            this.radioButtonDet_Phone.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButtonDet_Phone.Name = "radioButtonDet_Phone";
-            this.radioButtonDet_Phone.Size = new System.Drawing.Size(88, 20);
-            this.radioButtonDet_Phone.TabIndex = 0;
-            this.radioButtonDet_Phone.TabStop = true;
-            this.radioButtonDet_Phone.Text = "Телефон";
-            this.radioButtonDet_Phone.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(400, 43);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "ID игрока:";
             // 
-            // radioButtonDet_Passport
+            // dataGridViewFSelect
             // 
-            this.radioButtonDet_Passport.AutoSize = true;
-            this.radioButtonDet_Passport.Location = new System.Drawing.Point(133, 25);
-            this.radioButtonDet_Passport.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButtonDet_Passport.Name = "radioButtonDet_Passport";
-            this.radioButtonDet_Passport.Size = new System.Drawing.Size(161, 20);
-            this.radioButtonDet_Passport.TabIndex = 1;
-            this.radioButtonDet_Passport.TabStop = true;
-            this.radioButtonDet_Passport.Text = "Паспортные данные";
-            this.radioButtonDet_Passport.UseVisualStyleBackColor = true;
-            // 
-            // buttonF_select
-            // 
-            this.buttonF_select.Location = new System.Drawing.Point(800, 37);
-            this.buttonF_select.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonF_select.Name = "buttonF_select";
-            this.buttonF_select.Size = new System.Drawing.Size(160, 31);
-            this.buttonF_select.TabIndex = 5;
-            this.buttonF_select.Text = "Поиск игроков";
-            this.buttonF_select.UseVisualStyleBackColor = true;
-            this.buttonF_select.Click += new System.EventHandler(this.buttonF_select_Click);
-            // 
-            // textBoxPlayerName
-            // 
-            this.textBoxPlayerName.Location = new System.Drawing.Point(93, 39);
-            this.textBoxPlayerName.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxPlayerName.Name = "textBoxPlayerName";
-            this.textBoxPlayerName.Size = new System.Drawing.Size(265, 22);
-            this.textBoxPlayerName.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "ФИО:";
+            this.dataGridViewFSelect.AllowUserToAddRows = false;
+            this.dataGridViewFSelect.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewFSelect.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewFSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewFSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewFSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFSelect.Location = new System.Drawing.Point(27, 98);
+            this.dataGridViewFSelect.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewFSelect.Name = "dataGridViewFSelect";
+            this.dataGridViewFSelect.ReadOnly = true;
+            this.dataGridViewFSelect.RowHeadersWidth = 51;
+            this.dataGridViewFSelect.Size = new System.Drawing.Size(1511, 591);
+            this.dataGridViewFSelect.TabIndex = 0;
             // 
             // tabPageSimple
             // 
@@ -738,7 +730,7 @@
             this.tabPageSimple.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageSimple.Name = "tabPageSimple";
             this.tabPageSimple.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageSimple.Size = new System.Drawing.Size(1459, 712);
+            this.tabPageSimple.Size = new System.Drawing.Size(1551, 710);
             this.tabPageSimple.TabIndex = 0;
             this.tabPageSimple.Text = "Простые запросы";
             this.tabPageSimple.UseVisualStyleBackColor = true;
@@ -754,36 +746,29 @@
             this.groupBoxSimpleQueries.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxSimpleQueries.Name = "groupBoxSimpleQueries";
             this.groupBoxSimpleQueries.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBoxSimpleQueries.Size = new System.Drawing.Size(1451, 704);
+            this.groupBoxSimpleQueries.Size = new System.Drawing.Size(1543, 702);
             this.groupBoxSimpleQueries.TabIndex = 0;
             this.groupBoxSimpleQueries.TabStop = false;
             this.groupBoxSimpleQueries.Text = "Выберите запрос:";
             // 
-            // radioButtonPlayers
+            // dataGridViewSelect
             // 
-            this.radioButtonPlayers.AutoSize = true;
-            this.radioButtonPlayers.Location = new System.Drawing.Point(27, 43);
-            this.radioButtonPlayers.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButtonPlayers.Name = "radioButtonPlayers";
-            this.radioButtonPlayers.Size = new System.Drawing.Size(100, 20);
-            this.radioButtonPlayers.TabIndex = 0;
-            this.radioButtonPlayers.TabStop = true;
-            this.radioButtonPlayers.Text = "Все игроки";
-            this.radioButtonPlayers.UseVisualStyleBackColor = true;
-            this.radioButtonPlayers.CheckedChanged += new System.EventHandler(this.radioButtonPlayers_CheckedChanged);
-            // 
-            // radioButtonGames
-            // 
-            this.radioButtonGames.AutoSize = true;
-            this.radioButtonGames.Location = new System.Drawing.Point(200, 43);
-            this.radioButtonGames.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButtonGames.Name = "radioButtonGames";
-            this.radioButtonGames.Size = new System.Drawing.Size(126, 20);
-            this.radioButtonGames.TabIndex = 1;
-            this.radioButtonGames.TabStop = true;
-            this.radioButtonGames.Text = "Активные игры";
-            this.radioButtonGames.UseVisualStyleBackColor = true;
-            this.radioButtonGames.CheckedChanged += new System.EventHandler(this.radioButtonGames_CheckedChanged);
+            this.dataGridViewSelect.AllowUserToAddRows = false;
+            this.dataGridViewSelect.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridViewSelect.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSelect.Location = new System.Drawing.Point(27, 98);
+            this.dataGridViewSelect.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewSelect.Name = "dataGridViewSelect";
+            this.dataGridViewSelect.ReadOnly = true;
+            this.dataGridViewSelect.RowHeadersWidth = 51;
+            this.dataGridViewSelect.Size = new System.Drawing.Size(1500, 589);
+            this.dataGridViewSelect.TabIndex = 3;
             // 
             // radioButtonGameDetails
             // 
@@ -798,24 +783,31 @@
             this.radioButtonGameDetails.UseVisualStyleBackColor = true;
             this.radioButtonGameDetails.CheckedChanged += new System.EventHandler(this.radioButtonGameDetails_CheckedChanged);
             // 
-            // dataGridViewSelect
+            // radioButtonGames
             // 
-            this.dataGridViewSelect.AllowUserToAddRows = false;
-            this.dataGridViewSelect.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridViewSelect.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewSelect.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewSelect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSelect.Location = new System.Drawing.Point(27, 98);
-            this.dataGridViewSelect.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewSelect.Name = "dataGridViewSelect";
-            this.dataGridViewSelect.ReadOnly = true;
-            this.dataGridViewSelect.RowHeadersWidth = 51;
-            this.dataGridViewSelect.Size = new System.Drawing.Size(1408, 591);
-            this.dataGridViewSelect.TabIndex = 3;
+            this.radioButtonGames.AutoSize = true;
+            this.radioButtonGames.Location = new System.Drawing.Point(200, 43);
+            this.radioButtonGames.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButtonGames.Name = "radioButtonGames";
+            this.radioButtonGames.Size = new System.Drawing.Size(126, 20);
+            this.radioButtonGames.TabIndex = 1;
+            this.radioButtonGames.TabStop = true;
+            this.radioButtonGames.Text = "Активные игры";
+            this.radioButtonGames.UseVisualStyleBackColor = true;
+            this.radioButtonGames.CheckedChanged += new System.EventHandler(this.radioButtonGames_CheckedChanged);
+            // 
+            // radioButtonPlayers
+            // 
+            this.radioButtonPlayers.AutoSize = true;
+            this.radioButtonPlayers.Location = new System.Drawing.Point(27, 43);
+            this.radioButtonPlayers.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButtonPlayers.Name = "radioButtonPlayers";
+            this.radioButtonPlayers.Size = new System.Drawing.Size(100, 20);
+            this.radioButtonPlayers.TabIndex = 0;
+            this.radioButtonPlayers.TabStop = true;
+            this.radioButtonPlayers.Text = "Все игроки";
+            this.radioButtonPlayers.UseVisualStyleBackColor = true;
+            this.radioButtonPlayers.CheckedChanged += new System.EventHandler(this.radioButtonPlayers_CheckedChanged);
             // 
             // tabControl1
             // 
@@ -828,14 +820,14 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1467, 741);
+            this.tabControl1.Size = new System.Drawing.Size(1570, 741);
             this.tabControl1.TabIndex = 0;
             // 
             // FormSQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 795);
+            this.ClientSize = new System.Drawing.Size(1570, 795);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -853,26 +845,26 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChange)).EndInit();
             this.groupBoxDMLOperations.ResumeLayout(false);
             this.groupBoxDMLOperations.PerformLayout();
-            this.groupBoxDMLButtons.ResumeLayout(false);
             this.groupBoxGameData.ResumeLayout(false);
             this.groupBoxGameData.PerformLayout();
+            this.groupBoxDMLButtons.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewChange)).EndInit();
             this.tabPageSubqueries.ResumeLayout(false);
             this.groupBoxSubqueries.ResumeLayout(false);
             this.groupBoxSubqueries.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubquery)).EndInit();
             this.groupBoxSubqueryType.ResumeLayout(false);
             this.groupBoxSubqueryType.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSubquery)).EndInit();
             this.tabPageAdvanced.ResumeLayout(false);
             this.groupBoxAdvancedSearch.ResumeLayout(false);
             this.groupBoxAdvancedSearch.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFSelect)).EndInit();
-            this.groupBoxOptions.ResumeLayout(false);
-            this.groupBoxOptions.PerformLayout();
             this.groupBoxDetails.ResumeLayout(false);
             this.groupBoxDetails.PerformLayout();
+            this.groupBoxOptions.ResumeLayout(false);
+            this.groupBoxOptions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFSelect)).EndInit();
             this.tabPageSimple.ResumeLayout(false);
             this.groupBoxSimpleQueries.ResumeLayout(false);
             this.groupBoxSimpleQueries.PerformLayout();
@@ -909,7 +901,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxTableId;
         private System.Windows.Forms.GroupBox groupBoxDMLButtons;
-        private System.Windows.Forms.Button buttonTransaction;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonInsert;

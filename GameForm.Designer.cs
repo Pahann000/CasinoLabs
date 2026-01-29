@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameForm));
             this.gameBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.казиноDataSet = new CasinoLabs.КазиноDataSet1();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -43,6 +45,11 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.gameBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonFind = new System.Windows.Forms.ToolStripButton();
+            this.toolStripTextBoxFind = new System.Windows.Forms.ToolStripTextBox();
+            this.checkBoxFilter = new System.Windows.Forms.CheckBox();
+            this.gameTableAdapter = new CasinoLabs.КазиноDataSet1TableAdapters.GameTableAdapter();
+            this.tableAdapterManager = new CasinoLabs.КазиноDataSet1TableAdapters.TableAdapterManager();
             this.gameDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,18 +57,11 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gameBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.казиноDataSet = new CasinoLabs.КазиноDataSet();
-            this.gameTableAdapter = new CasinoLabs.КазиноDataSetTableAdapters.GameTableAdapter();
-            this.tableAdapterManager = new CasinoLabs.КазиноDataSetTableAdapters.TableAdapterManager();
-            this.toolStripButtonFind = new System.Windows.Forms.ToolStripButton();
-            this.toolStripTextBoxFind = new System.Windows.Forms.ToolStripTextBox();
-            this.checkBoxFilter = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.gameBindingNavigator)).BeginInit();
             this.gameBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gameDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.казиноDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // gameBindingNavigator
@@ -93,7 +93,7 @@
             this.gameBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.gameBindingNavigator.Name = "gameBindingNavigator";
             this.gameBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.gameBindingNavigator.Size = new System.Drawing.Size(941, 31);
+            this.gameBindingNavigator.Size = new System.Drawing.Size(941, 27);
             this.gameBindingNavigator.TabIndex = 0;
             this.gameBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -103,8 +103,18 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // gameBindingSource
+            // 
+            this.gameBindingSource.DataMember = "Game";
+            this.gameBindingSource.DataSource = this.казиноDataSet;
+            // 
+            // казиноDataSet
+            // 
+            this.казиноDataSet.DataSetName = "КазиноDataSet";
+            this.казиноDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -192,6 +202,48 @@
             this.gameBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.gameBindingNavigatorSaveItem.Click += new System.EventHandler(this.gameBindingNavigatorSaveItem_Click);
             // 
+            // toolStripButtonFind
+            // 
+            this.toolStripButtonFind.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonFind.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFind.Image")));
+            this.toolStripButtonFind.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonFind.Name = "toolStripButtonFind";
+            this.toolStripButtonFind.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButtonFind.Text = "Поиск";
+            this.toolStripButtonFind.Click += new System.EventHandler(this.toolStripButtonFind_Click);
+            // 
+            // toolStripTextBoxFind
+            // 
+            this.toolStripTextBoxFind.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBoxFind.Name = "toolStripTextBoxFind";
+            this.toolStripTextBoxFind.Size = new System.Drawing.Size(100, 27);
+            // 
+            // checkBoxFilter
+            // 
+            this.checkBoxFilter.AutoSize = true;
+            this.checkBoxFilter.Location = new System.Drawing.Point(513, 7);
+            this.checkBoxFilter.Name = "checkBoxFilter";
+            this.checkBoxFilter.Size = new System.Drawing.Size(78, 20);
+            this.checkBoxFilter.TabIndex = 2;
+            this.checkBoxFilter.Text = "Фильтр";
+            this.checkBoxFilter.UseVisualStyleBackColor = true;
+            this.checkBoxFilter.CheckedChanged += new System.EventHandler(this.checkBoxFind_CheckedChanged);
+            // 
+            // gameTableAdapter
+            // 
+            this.gameTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.GameParticipationTableAdapter = null;
+            this.tableAdapterManager.GameTableAdapter = this.gameTableAdapter;
+            this.tableAdapterManager.PlayerTableAdapter = null;
+            this.tableAdapterManager.PokerTableTableAdapter = null;
+            this.tableAdapterManager.PositionsTableAdapter = null;
+            this.tableAdapterManager.StaffTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = CasinoLabs.КазиноDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // gameDataGridView
             // 
             this.gameDataGridView.AutoGenerateColumns = false;
@@ -204,13 +256,13 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.gameDataGridView.DataSource = this.gameBindingSource;
-            this.gameDataGridView.Location = new System.Drawing.Point(0, 37);
+            this.gameDataGridView.Location = new System.Drawing.Point(0, 30);
             this.gameDataGridView.Name = "gameDataGridView";
             this.gameDataGridView.RowHeadersWidth = 51;
             this.gameDataGridView.RowTemplate.Height = 24;
-            this.gameDataGridView.Size = new System.Drawing.Size(803, 255);
-            this.gameDataGridView.TabIndex = 1;
-            this.gameDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gameDataGridView_CellFormatting);
+            this.gameDataGridView.Size = new System.Drawing.Size(804, 249);
+            this.gameDataGridView.TabIndex = 2;
+            this.gameDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.gameDataGridView_DataError);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -260,65 +312,13 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
             // 
-            // gameBindingSource
-            // 
-            this.gameBindingSource.DataMember = "Game";
-            this.gameBindingSource.DataSource = this.казиноDataSet;
-            // 
-            // казиноDataSet
-            // 
-            this.казиноDataSet.DataSetName = "КазиноDataSet";
-            this.казиноDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gameTableAdapter
-            // 
-            this.gameTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.GameParticipationTableAdapter = null;
-            this.tableAdapterManager.GameTableAdapter = this.gameTableAdapter;
-            this.tableAdapterManager.PlayerTableAdapter = null;
-            this.tableAdapterManager.PokerTableTableAdapter = null;
-            this.tableAdapterManager.PositionsTableAdapter = null;
-            this.tableAdapterManager.StaffTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = CasinoLabs.КазиноDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // toolStripButtonFind
-            // 
-            this.toolStripButtonFind.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonFind.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonFind.Image")));
-            this.toolStripButtonFind.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonFind.Name = "toolStripButtonFind";
-            this.toolStripButtonFind.Size = new System.Drawing.Size(29, 24);
-            this.toolStripButtonFind.Text = "Поиск";
-            this.toolStripButtonFind.Click += new System.EventHandler(this.toolStripButtonFind_Click);
-            // 
-            // toolStripTextBoxFind
-            // 
-            this.toolStripTextBoxFind.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBoxFind.Name = "toolStripTextBoxFind";
-            this.toolStripTextBoxFind.Size = new System.Drawing.Size(100, 27);
-            // 
-            // checkBoxFilter
-            // 
-            this.checkBoxFilter.AutoSize = true;
-            this.checkBoxFilter.Location = new System.Drawing.Point(513, 7);
-            this.checkBoxFilter.Name = "checkBoxFilter";
-            this.checkBoxFilter.Size = new System.Drawing.Size(78, 20);
-            this.checkBoxFilter.TabIndex = 2;
-            this.checkBoxFilter.Text = "Фильтр";
-            this.checkBoxFilter.UseVisualStyleBackColor = true;
-            this.checkBoxFilter.CheckedChanged += new System.EventHandler(this.checkBoxFind_CheckedChanged);
-            // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 450);
-            this.Controls.Add(this.checkBoxFilter);
             this.Controls.Add(this.gameDataGridView);
+            this.Controls.Add(this.checkBoxFilter);
             this.Controls.Add(this.gameBindingNavigator);
             this.Name = "GameForm";
             this.Text = "Список игр";
@@ -326,9 +326,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gameBindingNavigator)).EndInit();
             this.gameBindingNavigator.ResumeLayout(false);
             this.gameBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gameDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gameBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.казиноDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gameDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,10 +336,8 @@
 
         #endregion
 
-        private КазиноDataSet казиноDataSet;
+        private КазиноDataSet1 казиноDataSet;
         private System.Windows.Forms.BindingSource gameBindingSource;
-        private КазиноDataSetTableAdapters.GameTableAdapter gameTableAdapter;
-        private КазиноDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator gameBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -353,6 +351,11 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton gameBindingNavigatorSaveItem;
+        private System.Windows.Forms.ToolStripButton toolStripButtonFind;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxFind;
+        private System.Windows.Forms.CheckBox checkBoxFilter;
+        private КазиноDataSet1TableAdapters.GameTableAdapter gameTableAdapter;
+        private КазиноDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView gameDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -360,8 +363,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.ToolStripButton toolStripButtonFind;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBoxFind;
-        private System.Windows.Forms.CheckBox checkBoxFilter;
     }
 }

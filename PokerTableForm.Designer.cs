@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label table_idLabel;
-            System.Windows.Forms.Label table_numberLabel;
-            System.Windows.Forms.Label table_typeLabel;
-            System.Windows.Forms.Label statusLabel;
-            System.Windows.Forms.Label max_playersLabel;
+            System.Windows.Forms.Label table_idLabel1;
+            System.Windows.Forms.Label table_numberLabel1;
+            System.Windows.Forms.Label table_typeLabel1;
+            System.Windows.Forms.Label statusLabel1;
+            System.Windows.Forms.Label max_playersLabel1;
+            System.Windows.Forms.Label is_reservedLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PokerTableForm));
-            this.казиноDataSet = new CasinoLabs.КазиноDataSet();
+            this.казиноDataSet = new CasinoLabs.КазиноDataSet1();
             this.pokerTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pokerTableTableAdapter = new CasinoLabs.КазиноDataSetTableAdapters.PokerTableTableAdapter();
-            this.tableAdapterManager = new CasinoLabs.КазиноDataSetTableAdapters.TableAdapterManager();
-            this.gameParticipationTableAdapter = new CasinoLabs.КазиноDataSetTableAdapters.GameParticipationTableAdapter();
             this.pokerTableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -53,11 +51,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pokerTableBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.table_idTextBox = new System.Windows.Forms.TextBox();
-            this.table_numberTextBox = new System.Windows.Forms.TextBox();
-            this.table_typeTextBox = new System.Windows.Forms.TextBox();
-            this.statusTextBox = new System.Windows.Forms.TextBox();
-            this.max_playersTextBox = new System.Windows.Forms.TextBox();
             this.gameParticipationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem1 = new System.Windows.Forms.ToolStripButton();
@@ -72,6 +65,15 @@
             this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.openPlayerButton = new System.Windows.Forms.Button();
+            this.pokerTableTableAdapter = new CasinoLabs.КазиноDataSet1TableAdapters.PokerTableTableAdapter();
+            this.tableAdapterManager = new CasinoLabs.КазиноDataSet1TableAdapters.TableAdapterManager();
+            this.table_idTextBox1 = new System.Windows.Forms.TextBox();
+            this.table_numberTextBox1 = new System.Windows.Forms.TextBox();
+            this.table_typeTextBox1 = new System.Windows.Forms.TextBox();
+            this.statusTextBox1 = new System.Windows.Forms.TextBox();
+            this.max_playersTextBox1 = new System.Windows.Forms.TextBox();
+            this.is_reservedCheckBox = new System.Windows.Forms.CheckBox();
+            this.gameParticipationTableAdapter = new CasinoLabs.КазиноDataSet1TableAdapters.GameParticipationTableAdapter();
             this.gameParticipationDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,11 +83,12 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            table_idLabel = new System.Windows.Forms.Label();
-            table_numberLabel = new System.Windows.Forms.Label();
-            table_typeLabel = new System.Windows.Forms.Label();
-            statusLabel = new System.Windows.Forms.Label();
-            max_playersLabel = new System.Windows.Forms.Label();
+            table_idLabel1 = new System.Windows.Forms.Label();
+            table_numberLabel1 = new System.Windows.Forms.Label();
+            table_typeLabel1 = new System.Windows.Forms.Label();
+            statusLabel1 = new System.Windows.Forms.Label();
+            max_playersLabel1 = new System.Windows.Forms.Label();
+            is_reservedLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.казиноDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokerTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pokerTableBindingNavigator)).BeginInit();
@@ -96,50 +99,59 @@
             ((System.ComponentModel.ISupportInitialize)(this.gameParticipationDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // table_idLabel
+            // table_idLabel1
             // 
-            table_idLabel.AutoSize = true;
-            table_idLabel.Location = new System.Drawing.Point(10, 35);
-            table_idLabel.Name = "table_idLabel";
-            table_idLabel.Size = new System.Drawing.Size(54, 16);
-            table_idLabel.TabIndex = 1;
-            table_idLabel.Text = "table id:";
+            table_idLabel1.AutoSize = true;
+            table_idLabel1.Location = new System.Drawing.Point(8, 38);
+            table_idLabel1.Name = "table_idLabel1";
+            table_idLabel1.Size = new System.Drawing.Size(54, 16);
+            table_idLabel1.TabIndex = 16;
+            table_idLabel1.Text = "table id:";
             // 
-            // table_numberLabel
+            // table_numberLabel1
             // 
-            table_numberLabel.AutoSize = true;
-            table_numberLabel.Location = new System.Drawing.Point(10, 63);
-            table_numberLabel.Name = "table_numberLabel";
-            table_numberLabel.Size = new System.Drawing.Size(88, 16);
-            table_numberLabel.TabIndex = 3;
-            table_numberLabel.Text = "table number:";
+            table_numberLabel1.AutoSize = true;
+            table_numberLabel1.Location = new System.Drawing.Point(8, 66);
+            table_numberLabel1.Name = "table_numberLabel1";
+            table_numberLabel1.Size = new System.Drawing.Size(88, 16);
+            table_numberLabel1.TabIndex = 18;
+            table_numberLabel1.Text = "table number:";
             // 
-            // table_typeLabel
+            // table_typeLabel1
             // 
-            table_typeLabel.AutoSize = true;
-            table_typeLabel.Location = new System.Drawing.Point(10, 91);
-            table_typeLabel.Name = "table_typeLabel";
-            table_typeLabel.Size = new System.Drawing.Size(69, 16);
-            table_typeLabel.TabIndex = 5;
-            table_typeLabel.Text = "table type:";
+            table_typeLabel1.AutoSize = true;
+            table_typeLabel1.Location = new System.Drawing.Point(8, 94);
+            table_typeLabel1.Name = "table_typeLabel1";
+            table_typeLabel1.Size = new System.Drawing.Size(69, 16);
+            table_typeLabel1.TabIndex = 20;
+            table_typeLabel1.Text = "table type:";
             // 
-            // statusLabel
+            // statusLabel1
             // 
-            statusLabel.AutoSize = true;
-            statusLabel.Location = new System.Drawing.Point(10, 119);
-            statusLabel.Name = "statusLabel";
-            statusLabel.Size = new System.Drawing.Size(45, 16);
-            statusLabel.TabIndex = 7;
-            statusLabel.Text = "status:";
+            statusLabel1.AutoSize = true;
+            statusLabel1.Location = new System.Drawing.Point(8, 122);
+            statusLabel1.Name = "statusLabel1";
+            statusLabel1.Size = new System.Drawing.Size(45, 16);
+            statusLabel1.TabIndex = 22;
+            statusLabel1.Text = "status:";
             // 
-            // max_playersLabel
+            // max_playersLabel1
             // 
-            max_playersLabel.AutoSize = true;
-            max_playersLabel.Location = new System.Drawing.Point(10, 147);
-            max_playersLabel.Name = "max_playersLabel";
-            max_playersLabel.Size = new System.Drawing.Size(83, 16);
-            max_playersLabel.TabIndex = 9;
-            max_playersLabel.Text = "max players:";
+            max_playersLabel1.AutoSize = true;
+            max_playersLabel1.Location = new System.Drawing.Point(8, 150);
+            max_playersLabel1.Name = "max_playersLabel1";
+            max_playersLabel1.Size = new System.Drawing.Size(83, 16);
+            max_playersLabel1.TabIndex = 24;
+            max_playersLabel1.Text = "max players:";
+            // 
+            // is_reservedLabel
+            // 
+            is_reservedLabel.AutoSize = true;
+            is_reservedLabel.Location = new System.Drawing.Point(8, 180);
+            is_reservedLabel.Name = "is_reservedLabel";
+            is_reservedLabel.Size = new System.Drawing.Size(77, 16);
+            is_reservedLabel.TabIndex = 26;
+            is_reservedLabel.Text = "is reserved:";
             // 
             // казиноDataSet
             // 
@@ -150,25 +162,6 @@
             // 
             this.pokerTableBindingSource.DataMember = "PokerTable";
             this.pokerTableBindingSource.DataSource = this.казиноDataSet;
-            // 
-            // pokerTableTableAdapter
-            // 
-            this.pokerTableTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.GameParticipationTableAdapter = this.gameParticipationTableAdapter;
-            this.tableAdapterManager.GameTableAdapter = null;
-            this.tableAdapterManager.PlayerTableAdapter = null;
-            this.tableAdapterManager.PokerTableTableAdapter = this.pokerTableTableAdapter;
-            this.tableAdapterManager.PositionsTableAdapter = null;
-            this.tableAdapterManager.StaffTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = CasinoLabs.КазиноDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // gameParticipationTableAdapter
-            // 
-            this.gameParticipationTableAdapter.ClearBeforeFill = true;
             // 
             // pokerTableBindingNavigator
             // 
@@ -197,7 +190,7 @@
             this.pokerTableBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pokerTableBindingNavigator.Name = "pokerTableBindingNavigator";
             this.pokerTableBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pokerTableBindingNavigator.Size = new System.Drawing.Size(1048, 31);
+            this.pokerTableBindingNavigator.Size = new System.Drawing.Size(1068, 31);
             this.pokerTableBindingNavigator.TabIndex = 0;
             this.pokerTableBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -213,7 +206,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 28);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -223,7 +216,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -232,7 +225,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -241,13 +234,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -262,7 +255,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -270,7 +263,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -279,62 +272,22 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // pokerTableBindingNavigatorSaveItem
             // 
             this.pokerTableBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.pokerTableBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pokerTableBindingNavigatorSaveItem.Image")));
             this.pokerTableBindingNavigatorSaveItem.Name = "pokerTableBindingNavigatorSaveItem";
-            this.pokerTableBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.pokerTableBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.pokerTableBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.pokerTableBindingNavigatorSaveItem.Click += new System.EventHandler(this.pokerTableBindingNavigatorSaveItem_Click);
-            // 
-            // table_idTextBox
-            // 
-            this.table_idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "table_id", true));
-            this.table_idTextBox.Location = new System.Drawing.Point(104, 32);
-            this.table_idTextBox.Name = "table_idTextBox";
-            this.table_idTextBox.Size = new System.Drawing.Size(100, 22);
-            this.table_idTextBox.TabIndex = 2;
-            // 
-            // table_numberTextBox
-            // 
-            this.table_numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "table_number", true));
-            this.table_numberTextBox.Location = new System.Drawing.Point(104, 60);
-            this.table_numberTextBox.Name = "table_numberTextBox";
-            this.table_numberTextBox.Size = new System.Drawing.Size(100, 22);
-            this.table_numberTextBox.TabIndex = 4;
-            // 
-            // table_typeTextBox
-            // 
-            this.table_typeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "table_type", true));
-            this.table_typeTextBox.Location = new System.Drawing.Point(104, 88);
-            this.table_typeTextBox.Name = "table_typeTextBox";
-            this.table_typeTextBox.Size = new System.Drawing.Size(100, 22);
-            this.table_typeTextBox.TabIndex = 6;
-            // 
-            // statusTextBox
-            // 
-            this.statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "status", true));
-            this.statusTextBox.Location = new System.Drawing.Point(104, 116);
-            this.statusTextBox.Name = "statusTextBox";
-            this.statusTextBox.Size = new System.Drawing.Size(100, 22);
-            this.statusTextBox.TabIndex = 8;
-            // 
-            // max_playersTextBox
-            // 
-            this.max_playersTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "max_players", true));
-            this.max_playersTextBox.Location = new System.Drawing.Point(104, 144);
-            this.max_playersTextBox.Name = "max_playersTextBox";
-            this.max_playersTextBox.Size = new System.Drawing.Size(100, 22);
-            this.max_playersTextBox.TabIndex = 10;
             // 
             // gameParticipationBindingSource
             // 
@@ -362,7 +315,7 @@
             this.bindingNavigatorSeparator5,
             this.bindingNavigatorAddNewItem1,
             this.bindingNavigatorDeleteItem1});
-            this.bindingNavigator1.Location = new System.Drawing.Point(12, 214);
+            this.bindingNavigator1.Location = new System.Drawing.Point(22, 240);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem1;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem1;
             this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem1;
@@ -379,13 +332,13 @@
             this.bindingNavigatorAddNewItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem1.Image")));
             this.bindingNavigatorAddNewItem1.Name = "bindingNavigatorAddNewItem1";
             this.bindingNavigatorAddNewItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem1.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem1.Text = "Добавить";
             // 
             // bindingNavigatorCountItem1
             // 
             this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
-            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(55, 28);
             this.bindingNavigatorCountItem1.Text = "для {0}";
             this.bindingNavigatorCountItem1.ToolTipText = "Общее число элементов";
             // 
@@ -395,7 +348,7 @@
             this.bindingNavigatorDeleteItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem1.Image")));
             this.bindingNavigatorDeleteItem1.Name = "bindingNavigatorDeleteItem1";
             this.bindingNavigatorDeleteItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem1.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem1.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem1
@@ -404,7 +357,7 @@
             this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
             this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem1";
             this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem1.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem1
@@ -413,13 +366,13 @@
             this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
             this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
             this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem1.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator3
             // 
             this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
-            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem1
             // 
@@ -434,7 +387,7 @@
             // bindingNavigatorSeparator4
             // 
             this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
-            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem1
             // 
@@ -442,7 +395,7 @@
             this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
             this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
             this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem1.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem1
@@ -451,13 +404,13 @@
             this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
             this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
             this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem1.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator5
             // 
             this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
-            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 31);
             // 
             // openPlayerButton
             // 
@@ -468,6 +421,75 @@
             this.openPlayerButton.Text = "Открыть игроков";
             this.openPlayerButton.UseVisualStyleBackColor = true;
             this.openPlayerButton.Click += new System.EventHandler(this.openPlayerButton_Click);
+            // 
+            // pokerTableTableAdapter
+            // 
+            this.pokerTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.GameParticipationTableAdapter = null;
+            this.tableAdapterManager.GameTableAdapter = null;
+            this.tableAdapterManager.PlayerTableAdapter = null;
+            this.tableAdapterManager.PokerTableTableAdapter = this.pokerTableTableAdapter;
+            this.tableAdapterManager.PositionsTableAdapter = null;
+            this.tableAdapterManager.StaffTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = CasinoLabs.КазиноDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // table_idTextBox1
+            // 
+            this.table_idTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "table_id", true));
+            this.table_idTextBox1.Location = new System.Drawing.Point(102, 35);
+            this.table_idTextBox1.Name = "table_idTextBox1";
+            this.table_idTextBox1.Size = new System.Drawing.Size(104, 22);
+            this.table_idTextBox1.TabIndex = 17;
+            // 
+            // table_numberTextBox1
+            // 
+            this.table_numberTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "table_number", true));
+            this.table_numberTextBox1.Location = new System.Drawing.Point(102, 63);
+            this.table_numberTextBox1.Name = "table_numberTextBox1";
+            this.table_numberTextBox1.Size = new System.Drawing.Size(104, 22);
+            this.table_numberTextBox1.TabIndex = 19;
+            // 
+            // table_typeTextBox1
+            // 
+            this.table_typeTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "table_type", true));
+            this.table_typeTextBox1.Location = new System.Drawing.Point(102, 91);
+            this.table_typeTextBox1.Name = "table_typeTextBox1";
+            this.table_typeTextBox1.Size = new System.Drawing.Size(104, 22);
+            this.table_typeTextBox1.TabIndex = 21;
+            // 
+            // statusTextBox1
+            // 
+            this.statusTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "status", true));
+            this.statusTextBox1.Location = new System.Drawing.Point(102, 119);
+            this.statusTextBox1.Name = "statusTextBox1";
+            this.statusTextBox1.Size = new System.Drawing.Size(104, 22);
+            this.statusTextBox1.TabIndex = 23;
+            // 
+            // max_playersTextBox1
+            // 
+            this.max_playersTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pokerTableBindingSource, "max_players", true));
+            this.max_playersTextBox1.Location = new System.Drawing.Point(102, 147);
+            this.max_playersTextBox1.Name = "max_playersTextBox1";
+            this.max_playersTextBox1.Size = new System.Drawing.Size(104, 22);
+            this.max_playersTextBox1.TabIndex = 25;
+            // 
+            // is_reservedCheckBox
+            // 
+            this.is_reservedCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.pokerTableBindingSource, "is_reserved", true));
+            this.is_reservedCheckBox.Location = new System.Drawing.Point(102, 175);
+            this.is_reservedCheckBox.Name = "is_reservedCheckBox";
+            this.is_reservedCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.is_reservedCheckBox.TabIndex = 27;
+            this.is_reservedCheckBox.Text = "checkBox1";
+            this.is_reservedCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // gameParticipationTableAdapter
+            // 
+            this.gameParticipationTableAdapter.ClearBeforeFill = true;
             // 
             // gameParticipationDataGridView
             // 
@@ -483,12 +505,13 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.gameParticipationDataGridView.DataSource = this.gameParticipationBindingSource;
-            this.gameParticipationDataGridView.Location = new System.Drawing.Point(0, 244);
+            this.gameParticipationDataGridView.Location = new System.Drawing.Point(11, 270);
             this.gameParticipationDataGridView.Name = "gameParticipationDataGridView";
             this.gameParticipationDataGridView.RowHeadersWidth = 51;
             this.gameParticipationDataGridView.RowTemplate.Height = 24;
-            this.gameParticipationDataGridView.Size = new System.Drawing.Size(1048, 220);
-            this.gameParticipationDataGridView.TabIndex = 16;
+            this.gameParticipationDataGridView.Size = new System.Drawing.Size(1057, 220);
+            this.gameParticipationDataGridView.TabIndex = 27;
+            this.gameParticipationDataGridView.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.gameParticipationDataGridView_DataError);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -559,20 +582,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 540);
+            this.ClientSize = new System.Drawing.Size(1068, 592);
             this.Controls.Add(this.gameParticipationDataGridView);
+            this.Controls.Add(table_idLabel1);
+            this.Controls.Add(this.table_idTextBox1);
+            this.Controls.Add(table_numberLabel1);
+            this.Controls.Add(this.table_numberTextBox1);
+            this.Controls.Add(table_typeLabel1);
+            this.Controls.Add(this.table_typeTextBox1);
+            this.Controls.Add(statusLabel1);
+            this.Controls.Add(this.statusTextBox1);
+            this.Controls.Add(max_playersLabel1);
+            this.Controls.Add(this.max_playersTextBox1);
+            this.Controls.Add(is_reservedLabel);
+            this.Controls.Add(this.is_reservedCheckBox);
             this.Controls.Add(this.openPlayerButton);
             this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(table_idLabel);
-            this.Controls.Add(this.table_idTextBox);
-            this.Controls.Add(table_numberLabel);
-            this.Controls.Add(this.table_numberTextBox);
-            this.Controls.Add(table_typeLabel);
-            this.Controls.Add(this.table_typeTextBox);
-            this.Controls.Add(statusLabel);
-            this.Controls.Add(this.statusTextBox);
-            this.Controls.Add(max_playersLabel);
-            this.Controls.Add(this.max_playersTextBox);
             this.Controls.Add(this.pokerTableBindingNavigator);
             this.Name = "PokerTableForm";
             this.Text = "Игровые столы";
@@ -594,10 +619,8 @@
 
         #endregion
 
-        private КазиноDataSet казиноDataSet;
+        private КазиноDataSet1 казиноDataSet;
         private System.Windows.Forms.BindingSource pokerTableBindingSource;
-        private КазиноDataSetTableAdapters.PokerTableTableAdapter pokerTableTableAdapter;
-        private КазиноDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator pokerTableBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -611,12 +634,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton pokerTableBindingNavigatorSaveItem;
-        private КазиноDataSetTableAdapters.GameParticipationTableAdapter gameParticipationTableAdapter;
-        private System.Windows.Forms.TextBox table_idTextBox;
-        private System.Windows.Forms.TextBox table_numberTextBox;
-        private System.Windows.Forms.TextBox table_typeTextBox;
-        private System.Windows.Forms.TextBox statusTextBox;
-        private System.Windows.Forms.TextBox max_playersTextBox;
         private System.Windows.Forms.BindingSource gameParticipationBindingSource;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem1;
@@ -631,6 +648,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem1;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator5;
         private System.Windows.Forms.Button openPlayerButton;
+        private КазиноDataSet1TableAdapters.PokerTableTableAdapter pokerTableTableAdapter;
+        private КазиноDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox table_idTextBox1;
+        private System.Windows.Forms.TextBox table_numberTextBox1;
+        private System.Windows.Forms.TextBox table_typeTextBox1;
+        private System.Windows.Forms.TextBox statusTextBox1;
+        private System.Windows.Forms.TextBox max_playersTextBox1;
+        private System.Windows.Forms.CheckBox is_reservedCheckBox;
+        private КазиноDataSet1TableAdapters.GameParticipationTableAdapter gameParticipationTableAdapter;
         private System.Windows.Forms.DataGridView gameParticipationDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

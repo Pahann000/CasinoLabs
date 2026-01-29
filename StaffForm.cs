@@ -102,5 +102,10 @@ namespace CasinoLabs
                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void staffBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace CasinoLabs.Properties {
             }
         }
 
+
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100, 100")]
@@ -46,6 +47,17 @@ namespace CasinoLabs.Properties {
         public string КазиноConnectionString {
             get {
                 return ((string)(this["КазиноConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=Казино;Integrated Security=True;TrustServer" +
+            "Certificate=True")]
+        public string КазиноConnectionString1 {
+            get {
+                return ((string)(this["КазиноConnectionString1"]));
             }
         }
     }

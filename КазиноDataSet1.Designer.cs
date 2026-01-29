@@ -20,9 +20,9 @@ namespace CasinoLabs {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("КазиноDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("КазиноDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class КазиноDataSet : global::System.Data.DataSet {
+    public partial class КазиноDataSet1 : global::System.Data.DataSet {
         
         private GameDataTable tableGame;
         
@@ -44,13 +44,13 @@ namespace CasinoLabs {
         
         private global::System.Data.DataRelation relationFK__GameParti__playe__4E88ABD4;
         
-        private global::System.Data.DataRelation relationFK__Staff__Position;
+        private global::System.Data.DataRelation relationFK__Staff__position___3C69FB99;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public КазиноDataSet() {
+        public КазиноDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -62,7 +62,7 @@ namespace CasinoLabs {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected КазиноDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected КазиноDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -217,7 +217,7 @@ namespace CasinoLabs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            КазиноDataSet cln = ((КазиноDataSet)(base.Clone()));
+            КазиноDataSet1 cln = ((КазиноDataSet1)(base.Clone()));
             cln.InitVars();
             cln.InitExpressions();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
@@ -334,15 +334,15 @@ namespace CasinoLabs {
             this.relationFK__Game__table_id__48CFD27E = this.Relations["FK__Game__table_id__48CFD27E"];
             this.relationFK__GameParti__game___4D94879B = this.Relations["FK__GameParti__game___4D94879B"];
             this.relationFK__GameParti__playe__4E88ABD4 = this.Relations["FK__GameParti__playe__4E88ABD4"];
-            this.relationFK__Staff__Position = this.Relations["FK__Staff__Position"];
+            this.relationFK__Staff__position___3C69FB99 = this.Relations["FK__Staff__position___3C69FB99"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "КазиноDataSet";
+            this.DataSetName = "КазиноDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/КазиноDataSet.xsd";
+            this.Namespace = "http://tempuri.org/КазиноDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableGame = new GameDataTable();
@@ -373,10 +373,10 @@ namespace CasinoLabs {
                         this.tablePlayer.player_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableGameParticipation.player_idColumn}, false);
             this.Relations.Add(this.relationFK__GameParti__playe__4E88ABD4);
-            this.relationFK__Staff__Position = new global::System.Data.DataRelation("FK__Staff__Position", new global::System.Data.DataColumn[] {
+            this.relationFK__Staff__position___3C69FB99 = new global::System.Data.DataRelation("FK__Staff__position___3C69FB99", new global::System.Data.DataColumn[] {
                         this.tablePositions.position_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableStaff.position_idColumn}, false);
-            this.Relations.Add(this.relationFK__Staff__Position);
+            this.Relations.Add(this.relationFK__Staff__position___3C69FB99);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -426,7 +426,7 @@ namespace CasinoLabs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            КазиноDataSet ds = new КазиноDataSet();
+            КазиноDataSet1 ds = new КазиноDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -473,7 +473,7 @@ namespace CasinoLabs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitExpressions() {
-            this.Staff.positionColumn.Expression = "Parent(FK__Staff__Position).position_name";
+            this.Staff.positionColumn.Expression = "Parent(FK__Staff__position___3C69FB99).position_name";
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -773,7 +773,7 @@ namespace CasinoLabs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                КазиноDataSet ds = new КазиноDataSet();
+                КазиноDataSet1 ds = new КазиноDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1140,7 +1140,7 @@ namespace CasinoLabs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                КазиноDataSet ds = new КазиноDataSet();
+                КазиноDataSet1 ds = new КазиноDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1215,6 +1215,8 @@ namespace CasinoLabs {
             private global::System.Data.DataColumn columnpassport_number;
             
             private global::System.Data.DataColumn columnphone;
+            
+            private global::System.Data.DataColumn columnskill_level;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1291,6 +1293,14 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn skill_levelColumn {
+                get {
+                    return this.columnskill_level;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1326,14 +1336,15 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PlayerRow AddPlayerRow(int player_id, string full_name, string passport_series, string passport_number, string phone) {
+            public PlayerRow AddPlayerRow(int player_id, string full_name, string passport_series, string passport_number, string phone, string skill_level) {
                 PlayerRow rowPlayerRow = ((PlayerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         player_id,
                         full_name,
                         passport_series,
                         passport_number,
-                        phone};
+                        phone,
+                        skill_level};
                 rowPlayerRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPlayerRow);
                 return rowPlayerRow;
@@ -1368,6 +1379,7 @@ namespace CasinoLabs {
                 this.columnpassport_series = base.Columns["passport_series"];
                 this.columnpassport_number = base.Columns["passport_number"];
                 this.columnphone = base.Columns["phone"];
+                this.columnskill_level = base.Columns["skill_level"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1383,6 +1395,8 @@ namespace CasinoLabs {
                 base.Columns.Add(this.columnpassport_number);
                 this.columnphone = new global::System.Data.DataColumn("phone", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnphone);
+                this.columnskill_level = new global::System.Data.DataColumn("skill_level", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnskill_level);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnplayer_id}, true));
                 this.columnplayer_id.AllowDBNull = false;
@@ -1395,6 +1409,8 @@ namespace CasinoLabs {
                 this.columnpassport_number.MaxLength = 6;
                 this.columnphone.AllowDBNull = false;
                 this.columnphone.MaxLength = 20;
+                this.columnskill_level.AllowDBNull = false;
+                this.columnskill_level.MaxLength = 20;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1462,7 +1478,7 @@ namespace CasinoLabs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                КазиноDataSet ds = new КазиноDataSet();
+                КазиноDataSet1 ds = new КазиноDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1537,6 +1553,8 @@ namespace CasinoLabs {
             private global::System.Data.DataColumn columnstatus;
             
             private global::System.Data.DataColumn columnmax_players;
+            
+            private global::System.Data.DataColumn columnis_reserved;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1613,6 +1631,14 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn is_reservedColumn {
+                get {
+                    return this.columnis_reserved;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1648,14 +1674,15 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public PokerTableRow AddPokerTableRow(int table_id, string table_number, string table_type, string status, int max_players) {
+            public PokerTableRow AddPokerTableRow(int table_id, string table_number, string table_type, string status, int max_players, bool is_reserved) {
                 PokerTableRow rowPokerTableRow = ((PokerTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         table_id,
                         table_number,
                         table_type,
                         status,
-                        max_players};
+                        max_players,
+                        is_reserved};
                 rowPokerTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPokerTableRow);
                 return rowPokerTableRow;
@@ -1690,6 +1717,7 @@ namespace CasinoLabs {
                 this.columntable_type = base.Columns["table_type"];
                 this.columnstatus = base.Columns["status"];
                 this.columnmax_players = base.Columns["max_players"];
+                this.columnis_reserved = base.Columns["is_reserved"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1705,6 +1733,8 @@ namespace CasinoLabs {
                 base.Columns.Add(this.columnstatus);
                 this.columnmax_players = new global::System.Data.DataColumn("max_players", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmax_players);
+                this.columnis_reserved = new global::System.Data.DataColumn("is_reserved", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnis_reserved);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columntable_id}, true));
                 this.columntable_id.AllowDBNull = false;
@@ -1716,6 +1746,7 @@ namespace CasinoLabs {
                 this.columnstatus.AllowDBNull = false;
                 this.columnstatus.MaxLength = 20;
                 this.columnmax_players.AllowDBNull = false;
+                this.columnis_reserved.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1783,7 +1814,7 @@ namespace CasinoLabs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                КазиноDataSet ds = new КазиноDataSet();
+                КазиноDataSet1 ds = new КазиноDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2071,7 +2102,7 @@ namespace CasinoLabs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                КазиноDataSet ds = new КазиноDataSet();
+                КазиноDataSet1 ds = new КазиноDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2148,6 +2179,8 @@ namespace CasinoLabs {
             private global::System.Data.DataColumn columnposition_id;
             
             private global::System.Data.DataColumn columnphoto;
+            
+            private global::System.Data.DataColumn columnemployee_comments;
             
             private global::System.Data.DataColumn columnposition;
             
@@ -2243,6 +2276,14 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn employee_commentsColumn {
+                get {
+                    return this.columnemployee_comments;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn positionColumn {
                 get {
                     return this.columnposition;
@@ -2286,7 +2327,7 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StaffRow AddStaffRow(int staff_id, string full_name, string passport_series, string passport_number, PositionsRow parentPositionsRowByFK__Staff__Position, byte[] photo, string position) {
+            public StaffRow AddStaffRow(int staff_id, string full_name, string passport_series, string passport_number, PositionsRow parentPositionsRowByFK__Staff__position___3C69FB99, byte[] photo, string employee_comments, string position) {
                 StaffRow rowStaffRow = ((StaffRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         staff_id,
@@ -2295,9 +2336,10 @@ namespace CasinoLabs {
                         passport_number,
                         null,
                         photo,
+                        employee_comments,
                         position};
-                if ((parentPositionsRowByFK__Staff__Position != null)) {
-                    columnValuesArray[4] = parentPositionsRowByFK__Staff__Position[0];
+                if ((parentPositionsRowByFK__Staff__position___3C69FB99 != null)) {
+                    columnValuesArray[4] = parentPositionsRowByFK__Staff__position___3C69FB99[0];
                 }
                 rowStaffRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStaffRow);
@@ -2306,7 +2348,7 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public StaffRow AddStaffRow(int staff_id, string full_name, string passport_series, string passport_number, PositionsRow parentPositionsRowByFK__Staff__Position, byte[] photo) {
+            public StaffRow AddStaffRow(int staff_id, string full_name, string passport_series, string passport_number, PositionsRow parentPositionsRowByFK__Staff__position___3C69FB99, byte[] photo, string employee_comments) {
                 StaffRow rowStaffRow = ((StaffRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         staff_id,
@@ -2315,9 +2357,10 @@ namespace CasinoLabs {
                         passport_number,
                         null,
                         photo,
+                        employee_comments,
                         null};
-                if ((parentPositionsRowByFK__Staff__Position != null)) {
-                    columnValuesArray[4] = parentPositionsRowByFK__Staff__Position[0];
+                if ((parentPositionsRowByFK__Staff__position___3C69FB99 != null)) {
+                    columnValuesArray[4] = parentPositionsRowByFK__Staff__position___3C69FB99[0];
                 }
                 rowStaffRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowStaffRow);
@@ -2354,6 +2397,7 @@ namespace CasinoLabs {
                 this.columnpassport_number = base.Columns["passport_number"];
                 this.columnposition_id = base.Columns["position_id"];
                 this.columnphoto = base.Columns["photo"];
+                this.columnemployee_comments = base.Columns["employee_comments"];
                 this.columnposition = base.Columns["position"];
             }
             
@@ -2372,6 +2416,8 @@ namespace CasinoLabs {
                 base.Columns.Add(this.columnposition_id);
                 this.columnphoto = new global::System.Data.DataColumn("photo", typeof(byte[]), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnphoto);
+                this.columnemployee_comments = new global::System.Data.DataColumn("employee_comments", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemployee_comments);
                 this.columnposition = new global::System.Data.DataColumn("position", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnposition);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -2385,6 +2431,7 @@ namespace CasinoLabs {
                 this.columnpassport_number.AllowDBNull = false;
                 this.columnpassport_number.MaxLength = 6;
                 this.columnposition_id.AllowDBNull = false;
+                this.columnemployee_comments.MaxLength = 2147483647;
                 this.columnposition.ReadOnly = true;
             }
             
@@ -2409,7 +2456,7 @@ namespace CasinoLabs {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitExpressions() {
-                this.positionColumn.Expression = "Parent(FK__Staff__Position).position_name";
+                this.positionColumn.Expression = "Parent(FK__Staff__position___3C69FB99).position_name";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2459,7 +2506,7 @@ namespace CasinoLabs {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                КазиноDataSet ds = new КазиноDataSet();
+                КазиноDataSet1 ds = new КазиноDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2930,6 +2977,17 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string skill_level {
+                get {
+                    return ((string)(this[this.tablePlayer.skill_levelColumn]));
+                }
+                set {
+                    this[this.tablePlayer.skill_levelColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public GameParticipationRow[] GetGameParticipationRows() {
                 if ((this.Table.ChildRelations["FK__GameParti__playe__4E88ABD4"] == null)) {
                     return new GameParticipationRow[0];
@@ -3006,6 +3064,17 @@ namespace CasinoLabs {
                 }
                 set {
                     this[this.tablePokerTable.max_playersColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool is_reserved {
+                get {
+                    return ((bool)(this[this.tablePokerTable.is_reservedColumn]));
+                }
+                set {
+                    this[this.tablePokerTable.is_reservedColumn] = value;
                 }
             }
             
@@ -3088,11 +3157,11 @@ namespace CasinoLabs {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public StaffRow[] GetStaffRows() {
-                if ((this.Table.ChildRelations["FK__Staff__Position"] == null)) {
+                if ((this.Table.ChildRelations["FK__Staff__position___3C69FB99"] == null)) {
                     return new StaffRow[0];
                 }
                 else {
-                    return ((StaffRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Staff__Position"])));
+                    return ((StaffRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Staff__position___3C69FB99"])));
                 }
             }
         }
@@ -3184,6 +3253,22 @@ namespace CasinoLabs {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string employee_comments {
+                get {
+                    try {
+                        return ((string)(this[this.tableStaff.employee_commentsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'employee_comments\' в таблице \'Staff\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableStaff.employee_commentsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string position {
                 get {
                     try {
@@ -3202,10 +3287,10 @@ namespace CasinoLabs {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public PositionsRow PositionsRow {
                 get {
-                    return ((PositionsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Staff__Position"])));
+                    return ((PositionsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Staff__position___3C69FB99"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Staff__Position"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Staff__position___3C69FB99"]);
                 }
             }
             
@@ -3219,6 +3304,18 @@ namespace CasinoLabs {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetphotoNull() {
                 this[this.tableStaff.photoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isemployee_commentsNull() {
+                return this.IsNull(this.tableStaff.employee_commentsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setemployee_commentsNull() {
+                this[this.tableStaff.employee_commentsColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3450,7 +3547,7 @@ namespace CasinoLabs {
         }
     }
 }
-namespace CasinoLabs.КазиноDataSetTableAdapters {
+namespace CasinoLabs.КазиноDataSet1TableAdapters {
     
     
     /// <summary>
@@ -3643,7 +3740,7 @@ SELECT game_id, table_id, dealer_id, start_time, end_time, game_conditions FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(КазиноDataSet.GameDataTable dataTable) {
+        public virtual int Fill(КазиноDataSet1.GameDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3656,9 +3753,9 @@ SELECT game_id, table_id, dealer_id, start_time, end_time, game_conditions FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual КазиноDataSet.GameDataTable GetData() {
+        public virtual КазиноDataSet1.GameDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            КазиноDataSet.GameDataTable dataTable = new КазиноDataSet.GameDataTable();
+            КазиноDataSet1.GameDataTable dataTable = new КазиноDataSet1.GameDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3666,14 +3763,14 @@ SELECT game_id, table_id, dealer_id, start_time, end_time, game_conditions FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet.GameDataTable dataTable) {
+        public virtual int Update(КазиноDataSet1.GameDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet dataSet) {
+        public virtual int Update(КазиноDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Game");
         }
         
@@ -4026,7 +4123,7 @@ SELECT game_id, player_id, seat_number, buy_in, cash_out, entry_time, exit_time,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(КазиноDataSet.GameParticipationDataTable dataTable) {
+        public virtual int Fill(КазиноDataSet1.GameParticipationDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4039,9 +4136,9 @@ SELECT game_id, player_id, seat_number, buy_in, cash_out, entry_time, exit_time,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual КазиноDataSet.GameParticipationDataTable GetData() {
+        public virtual КазиноDataSet1.GameParticipationDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            КазиноDataSet.GameParticipationDataTable dataTable = new КазиноDataSet.GameParticipationDataTable();
+            КазиноDataSet1.GameParticipationDataTable dataTable = new КазиноDataSet1.GameParticipationDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4049,14 +4146,14 @@ SELECT game_id, player_id, seat_number, buy_in, cash_out, entry_time, exit_time,
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet.GameParticipationDataTable dataTable) {
+        public virtual int Update(КазиноDataSet1.GameParticipationDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet dataSet) {
+        public virtual int Update(КазиноDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "GameParticipation");
         }
         
@@ -4389,44 +4486,46 @@ SELECT game_id, player_id, seat_number, buy_in, cash_out, entry_time, exit_time,
             tableMapping.ColumnMappings.Add("passport_series", "passport_series");
             tableMapping.ColumnMappings.Add("passport_number", "passport_number");
             tableMapping.ColumnMappings.Add("phone", "phone");
+            tableMapping.ColumnMappings.Add("skill_level", "skill_level");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Player] WHERE (([player_id] = @Original_player_id) AND ([full_" +
-                "name] = @Original_full_name) AND ([passport_series] = @Original_passport_series)" +
-                " AND ([passport_number] = @Original_passport_number) AND ([phone] = @Original_ph" +
-                "one))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Player] WHERE (([player_id] = @Original_player_id) AND ([full_name] = @Original_full_name) AND ([passport_series] = @Original_passport_series) AND ([passport_number] = @Original_passport_number) AND ([phone] = @Original_phone) AND ([skill_level] = @Original_skill_level))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_player_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_passport_series", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_series", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_passport_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_phone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_skill_level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skill_level", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Player] ([player_id], [full_name], [passport_series], [passport_number], [phone]) VALUES (@player_id, @full_name, @passport_series, @passport_number, @phone);
-SELECT player_id, full_name, passport_series, passport_number, phone FROM Player WHERE (player_id = @player_id)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Player] ([player_id], [full_name], [passport_series], [passport_number], [phone], [skill_level]) VALUES (@player_id, @full_name, @passport_series, @passport_number, @phone, @skill_level);
+SELECT player_id, full_name, passport_series, passport_number, phone, skill_level FROM Player WHERE (player_id = @player_id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@player_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@passport_series", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_series", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@passport_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@phone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@skill_level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skill_level", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Player] SET [player_id] = @player_id, [full_name] = @full_name, [passport_series] = @passport_series, [passport_number] = @passport_number, [phone] = @phone WHERE (([player_id] = @Original_player_id) AND ([full_name] = @Original_full_name) AND ([passport_series] = @Original_passport_series) AND ([passport_number] = @Original_passport_number) AND ([phone] = @Original_phone));
-SELECT player_id, full_name, passport_series, passport_number, phone FROM Player WHERE (player_id = @player_id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Player] SET [player_id] = @player_id, [full_name] = @full_name, [passport_series] = @passport_series, [passport_number] = @passport_number, [phone] = @phone, [skill_level] = @skill_level WHERE (([player_id] = @Original_player_id) AND ([full_name] = @Original_full_name) AND ([passport_series] = @Original_passport_series) AND ([passport_number] = @Original_passport_number) AND ([phone] = @Original_phone) AND ([skill_level] = @Original_skill_level));
+SELECT player_id, full_name, passport_series, passport_number, phone, skill_level FROM Player WHERE (player_id = @player_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@player_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@passport_series", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_series", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@passport_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@phone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@skill_level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skill_level", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_player_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "player_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_passport_series", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_series", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_passport_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_phone", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "phone", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_skill_level", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "skill_level", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4442,8 +4541,8 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT player_id, full_name, passport_series, passport_number, phone FROM dbo.Pla" +
-                "yer";
+            this._commandCollection[0].CommandText = "SELECT player_id, full_name, passport_series, passport_number, phone, skill_level" +
+                " FROM dbo.Player";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4451,7 +4550,7 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(КазиноDataSet.PlayerDataTable dataTable) {
+        public virtual int Fill(КазиноDataSet1.PlayerDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4464,9 +4563,9 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual КазиноDataSet.PlayerDataTable GetData() {
+        public virtual КазиноDataSet1.PlayerDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            КазиноDataSet.PlayerDataTable dataTable = new КазиноDataSet.PlayerDataTable();
+            КазиноDataSet1.PlayerDataTable dataTable = new КазиноDataSet1.PlayerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4474,14 +4573,14 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet.PlayerDataTable dataTable) {
+        public virtual int Update(КазиноDataSet1.PlayerDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet dataSet) {
+        public virtual int Update(КазиноDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Player");
         }
         
@@ -4504,7 +4603,7 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_player_id, string Original_full_name, string Original_passport_series, string Original_passport_number, string Original_phone) {
+        public virtual int Delete(int Original_player_id, string Original_full_name, string Original_passport_series, string Original_passport_number, string Original_phone, string Original_skill_level) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_player_id));
             if ((Original_full_name == null)) {
                 throw new global::System.ArgumentNullException("Original_full_name");
@@ -4530,6 +4629,12 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
             else {
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_phone));
             }
+            if ((Original_skill_level == null)) {
+                throw new global::System.ArgumentNullException("Original_skill_level");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_skill_level));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4550,7 +4655,7 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int player_id, string full_name, string passport_series, string passport_number, string phone) {
+        public virtual int Insert(int player_id, string full_name, string passport_series, string passport_number, string phone, string skill_level) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(player_id));
             if ((full_name == null)) {
                 throw new global::System.ArgumentNullException("full_name");
@@ -4576,6 +4681,12 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = ((string)(phone));
             }
+            if ((skill_level == null)) {
+                throw new global::System.ArgumentNullException("skill_level");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(skill_level));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4596,7 +4707,7 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int player_id, string full_name, string passport_series, string passport_number, string phone, int Original_player_id, string Original_full_name, string Original_passport_series, string Original_passport_number, string Original_phone) {
+        public virtual int Update(int player_id, string full_name, string passport_series, string passport_number, string phone, string skill_level, int Original_player_id, string Original_full_name, string Original_passport_series, string Original_passport_number, string Original_phone, string Original_skill_level) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(player_id));
             if ((full_name == null)) {
                 throw new global::System.ArgumentNullException("full_name");
@@ -4622,30 +4733,42 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(phone));
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_player_id));
+            if ((skill_level == null)) {
+                throw new global::System.ArgumentNullException("skill_level");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(skill_level));
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_player_id));
             if ((Original_full_name == null)) {
                 throw new global::System.ArgumentNullException("Original_full_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_full_name));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_full_name));
             }
             if ((Original_passport_series == null)) {
                 throw new global::System.ArgumentNullException("Original_passport_series");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_passport_series));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_passport_series));
             }
             if ((Original_passport_number == null)) {
                 throw new global::System.ArgumentNullException("Original_passport_number");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_passport_number));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_passport_number));
             }
             if ((Original_phone == null)) {
                 throw new global::System.ArgumentNullException("Original_phone");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_phone));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_phone));
+            }
+            if ((Original_skill_level == null)) {
+                throw new global::System.ArgumentNullException("Original_skill_level");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_skill_level));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4667,8 +4790,8 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string full_name, string passport_series, string passport_number, string phone, int Original_player_id, string Original_full_name, string Original_passport_series, string Original_passport_number, string Original_phone) {
-            return this.Update(Original_player_id, full_name, passport_series, passport_number, phone, Original_player_id, Original_full_name, Original_passport_series, Original_passport_number, Original_phone);
+        public virtual int Update(string full_name, string passport_series, string passport_number, string phone, string skill_level, int Original_player_id, string Original_full_name, string Original_passport_series, string Original_passport_number, string Original_phone, string Original_skill_level) {
+            return this.Update(Original_player_id, full_name, passport_series, passport_number, phone, skill_level, Original_player_id, Original_full_name, Original_passport_series, Original_passport_number, Original_phone, Original_skill_level);
         }
     }
     
@@ -4798,43 +4921,46 @@ SELECT player_id, full_name, passport_series, passport_number, phone FROM Player
             tableMapping.ColumnMappings.Add("table_type", "table_type");
             tableMapping.ColumnMappings.Add("status", "status");
             tableMapping.ColumnMappings.Add("max_players", "max_players");
+            tableMapping.ColumnMappings.Add("is_reserved", "is_reserved");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[PokerTable] WHERE (([table_id] = @Original_table_id) AND ([tab" +
-                "le_number] = @Original_table_number) AND ([table_type] = @Original_table_type) A" +
-                "ND ([status] = @Original_status) AND ([max_players] = @Original_max_players))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[PokerTable] WHERE (([table_id] = @Original_table_id) AND ([table_number] = @Original_table_number) AND ([table_type] = @Original_table_type) AND ([status] = @Original_status) AND ([max_players] = @Original_max_players) AND ([is_reserved] = @Original_is_reserved))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_table_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_table_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_table_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_max_players", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "max_players", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_is_reserved", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "is_reserved", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[PokerTable] ([table_id], [table_number], [table_type], [status], [max_players]) VALUES (@table_id, @table_number, @table_type, @status, @max_players);
-SELECT table_id, table_number, table_type, status, max_players FROM PokerTable WHERE (table_id = @table_id)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[PokerTable] ([table_id], [table_number], [table_type], [status], [max_players], [is_reserved]) VALUES (@table_id, @table_number, @table_type, @status, @max_players, @is_reserved);
+SELECT table_id, table_number, table_type, status, max_players, is_reserved FROM PokerTable WHERE (table_id = @table_id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@table_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@table_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@table_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@max_players", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "max_players", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@is_reserved", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "is_reserved", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[PokerTable] SET [table_id] = @table_id, [table_number] = @table_number, [table_type] = @table_type, [status] = @status, [max_players] = @max_players WHERE (([table_id] = @Original_table_id) AND ([table_number] = @Original_table_number) AND ([table_type] = @Original_table_type) AND ([status] = @Original_status) AND ([max_players] = @Original_max_players));
-SELECT table_id, table_number, table_type, status, max_players FROM PokerTable WHERE (table_id = @table_id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[PokerTable] SET [table_id] = @table_id, [table_number] = @table_number, [table_type] = @table_type, [status] = @status, [max_players] = @max_players, [is_reserved] = @is_reserved WHERE (([table_id] = @Original_table_id) AND ([table_number] = @Original_table_number) AND ([table_type] = @Original_table_type) AND ([status] = @Original_status) AND ([max_players] = @Original_max_players) AND ([is_reserved] = @Original_is_reserved));
+SELECT table_id, table_number, table_type, status, max_players, is_reserved FROM PokerTable WHERE (table_id = @table_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@table_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@table_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@table_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@max_players", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "max_players", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@is_reserved", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "is_reserved", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_table_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_table_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_number", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_table_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "table_type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_status", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "status", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_max_players", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "max_players", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_is_reserved", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "is_reserved", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4850,8 +4976,8 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT table_id, table_number, table_type, status, max_players FROM dbo.PokerTabl" +
-                "e";
+            this._commandCollection[0].CommandText = "SELECT table_id, table_number, table_type, status, max_players, is_reserved FROM " +
+                "dbo.PokerTable";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -4859,7 +4985,7 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(КазиноDataSet.PokerTableDataTable dataTable) {
+        public virtual int Fill(КазиноDataSet1.PokerTableDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4872,9 +4998,9 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual КазиноDataSet.PokerTableDataTable GetData() {
+        public virtual КазиноDataSet1.PokerTableDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            КазиноDataSet.PokerTableDataTable dataTable = new КазиноDataSet.PokerTableDataTable();
+            КазиноDataSet1.PokerTableDataTable dataTable = new КазиноDataSet1.PokerTableDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4882,14 +5008,14 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet.PokerTableDataTable dataTable) {
+        public virtual int Update(КазиноDataSet1.PokerTableDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet dataSet) {
+        public virtual int Update(КазиноDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "PokerTable");
         }
         
@@ -4912,7 +5038,7 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_table_id, string Original_table_number, string Original_table_type, string Original_status, int Original_max_players) {
+        public virtual int Delete(int Original_table_id, string Original_table_number, string Original_table_type, string Original_status, int Original_max_players, bool Original_is_reserved) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_table_id));
             if ((Original_table_number == null)) {
                 throw new global::System.ArgumentNullException("Original_table_number");
@@ -4933,6 +5059,7 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_status));
             }
             this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_max_players));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((bool)(Original_is_reserved));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4953,7 +5080,7 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int table_id, string table_number, string table_type, string status, int max_players) {
+        public virtual int Insert(int table_id, string table_number, string table_type, string status, int max_players, bool is_reserved) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(table_id));
             if ((table_number == null)) {
                 throw new global::System.ArgumentNullException("table_number");
@@ -4974,6 +5101,7 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(status));
             }
             this.Adapter.InsertCommand.Parameters[4].Value = ((int)(max_players));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(is_reserved));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -4994,7 +5122,7 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int table_id, string table_number, string table_type, string status, int max_players, int Original_table_id, string Original_table_number, string Original_table_type, string Original_status, int Original_max_players) {
+        public virtual int Update(int table_id, string table_number, string table_type, string status, int max_players, bool is_reserved, int Original_table_id, string Original_table_number, string Original_table_type, string Original_status, int Original_max_players, bool Original_is_reserved) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(table_id));
             if ((table_number == null)) {
                 throw new global::System.ArgumentNullException("table_number");
@@ -5015,26 +5143,28 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(status));
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(max_players));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_table_id));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((bool)(is_reserved));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_table_id));
             if ((Original_table_number == null)) {
                 throw new global::System.ArgumentNullException("Original_table_number");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_table_number));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_table_number));
             }
             if ((Original_table_type == null)) {
                 throw new global::System.ArgumentNullException("Original_table_type");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_table_type));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_table_type));
             }
             if ((Original_status == null)) {
                 throw new global::System.ArgumentNullException("Original_status");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_status));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_status));
             }
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_max_players));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_max_players));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((bool)(Original_is_reserved));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5055,8 +5185,8 @@ SELECT table_id, table_number, table_type, status, max_players FROM PokerTable W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string table_number, string table_type, string status, int max_players, int Original_table_id, string Original_table_number, string Original_table_type, string Original_status, int Original_max_players) {
-            return this.Update(Original_table_id, table_number, table_type, status, max_players, Original_table_id, Original_table_number, Original_table_type, Original_status, Original_max_players);
+        public virtual int Update(string table_number, string table_type, string status, int max_players, bool is_reserved, int Original_table_id, string Original_table_number, string Original_table_type, string Original_status, int Original_max_players, bool Original_is_reserved) {
+            return this.Update(Original_table_id, table_number, table_type, status, max_players, is_reserved, Original_table_id, Original_table_number, Original_table_type, Original_status, Original_max_players, Original_is_reserved);
         }
     }
     
@@ -5239,7 +5369,7 @@ SELECT position_id, position_name, salary FROM Positions WHERE (position_id = @p
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(КазиноDataSet.PositionsDataTable dataTable) {
+        public virtual int Fill(КазиноDataSet1.PositionsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5252,9 +5382,9 @@ SELECT position_id, position_name, salary FROM Positions WHERE (position_id = @p
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual КазиноDataSet.PositionsDataTable GetData() {
+        public virtual КазиноDataSet1.PositionsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            КазиноDataSet.PositionsDataTable dataTable = new КазиноDataSet.PositionsDataTable();
+            КазиноDataSet1.PositionsDataTable dataTable = new КазиноDataSet1.PositionsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5262,14 +5392,14 @@ SELECT position_id, position_name, salary FROM Positions WHERE (position_id = @p
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet.PositionsDataTable dataTable) {
+        public virtual int Update(КазиноDataSet1.PositionsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet dataSet) {
+        public virtual int Update(КазиноDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Positions");
         }
         
@@ -5543,6 +5673,7 @@ SELECT position_id, position_name, salary FROM Positions WHERE (position_id = @p
             tableMapping.ColumnMappings.Add("passport_number", "passport_number");
             tableMapping.ColumnMappings.Add("position_id", "position_id");
             tableMapping.ColumnMappings.Add("photo", "photo");
+            tableMapping.ColumnMappings.Add("employee_comments", "employee_comments");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -5558,8 +5689,8 @@ SELECT position_id, position_name, salary FROM Positions WHERE (position_id = @p
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_position_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "position_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Staff] ([staff_id], [full_name], [passport_series], [passport_number], [position_id], [photo]) VALUES (@staff_id, @full_name, @passport_series, @passport_number, @position_id, @photo);
-SELECT staff_id, full_name, passport_series, passport_number, position_id, photo FROM Staff WHERE (staff_id = @staff_id)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Staff] ([staff_id], [full_name], [passport_series], [passport_number], [position_id], [photo], [employee_comments]) VALUES (@staff_id, @full_name, @passport_series, @passport_number, @position_id, @photo, @employee_comments);
+SELECT staff_id, full_name, passport_series, passport_number, position_id, photo, employee_comments FROM Staff WHERE (staff_id = @staff_id)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@staff_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "staff_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5567,10 +5698,11 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@passport_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@position_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "position_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@photo", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "photo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@employee_comments", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employee_comments", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Staff] SET [staff_id] = @staff_id, [full_name] = @full_name, [passport_series] = @passport_series, [passport_number] = @passport_number, [position_id] = @position_id, [photo] = @photo WHERE (([staff_id] = @Original_staff_id) AND ([full_name] = @Original_full_name) AND ([passport_series] = @Original_passport_series) AND ([passport_number] = @Original_passport_number) AND ([position_id] = @Original_position_id));
-SELECT staff_id, full_name, passport_series, passport_number, position_id, photo FROM Staff WHERE (staff_id = @staff_id)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Staff] SET [staff_id] = @staff_id, [full_name] = @full_name, [passport_series] = @passport_series, [passport_number] = @passport_number, [position_id] = @position_id, [photo] = @photo, [employee_comments] = @employee_comments WHERE (([staff_id] = @Original_staff_id) AND ([full_name] = @Original_full_name) AND ([passport_series] = @Original_passport_series) AND ([passport_number] = @Original_passport_number) AND ([position_id] = @Original_position_id));
+SELECT staff_id, full_name, passport_series, passport_number, position_id, photo, employee_comments FROM Staff WHERE (staff_id = @staff_id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@staff_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "staff_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5578,6 +5710,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@passport_number", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_number", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@position_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "position_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@photo", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "photo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@employee_comments", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "employee_comments", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_staff_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "staff_id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_full_name", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "full_name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_passport_series", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "passport_series", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -5598,8 +5731,8 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT staff_id, full_name, passport_series, passport_number, position_id, photo " +
-                "FROM dbo.Staff";
+            this._commandCollection[0].CommandText = "SELECT staff_id, full_name, passport_series, passport_number, position_id, photo," +
+                " employee_comments FROM Staff";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5607,7 +5740,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(КазиноDataSet.StaffDataTable dataTable) {
+        public virtual int Fill(КазиноDataSet1.StaffDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5620,9 +5753,9 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual КазиноDataSet.StaffDataTable GetData() {
+        public virtual КазиноDataSet1.StaffDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            КазиноDataSet.StaffDataTable dataTable = new КазиноDataSet.StaffDataTable(true);
+            КазиноDataSet1.StaffDataTable dataTable = new КазиноDataSet1.StaffDataTable(true);
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5630,14 +5763,14 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet.StaffDataTable dataTable) {
+        public virtual int Update(КазиноDataSet1.StaffDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(КазиноDataSet dataSet) {
+        public virtual int Update(КазиноDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Staff");
         }
         
@@ -5701,7 +5834,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int staff_id, string full_name, string passport_series, string passport_number, int position_id, byte[] photo) {
+        public virtual int Insert(int staff_id, string full_name, string passport_series, string passport_number, int position_id, byte[] photo, string employee_comments) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((int)(staff_id));
             if ((full_name == null)) {
                 throw new global::System.ArgumentNullException("full_name");
@@ -5728,6 +5861,12 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((byte[])(photo));
             }
+            if ((employee_comments == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(employee_comments));
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5748,7 +5887,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int staff_id, string full_name, string passport_series, string passport_number, int position_id, byte[] photo, int Original_staff_id, string Original_full_name, string Original_passport_series, string Original_passport_number, int Original_position_id) {
+        public virtual int Update(int staff_id, string full_name, string passport_series, string passport_number, int position_id, byte[] photo, string employee_comments, int Original_staff_id, string Original_full_name, string Original_passport_series, string Original_passport_number, int Original_position_id) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(staff_id));
             if ((full_name == null)) {
                 throw new global::System.ArgumentNullException("full_name");
@@ -5775,26 +5914,32 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((byte[])(photo));
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_staff_id));
+            if ((employee_comments == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(employee_comments));
+            }
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_staff_id));
             if ((Original_full_name == null)) {
                 throw new global::System.ArgumentNullException("Original_full_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_full_name));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_full_name));
             }
             if ((Original_passport_series == null)) {
                 throw new global::System.ArgumentNullException("Original_passport_series");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_passport_series));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_passport_series));
             }
             if ((Original_passport_number == null)) {
                 throw new global::System.ArgumentNullException("Original_passport_number");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_passport_number));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_passport_number));
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_position_id));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_position_id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5815,8 +5960,8 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string full_name, string passport_series, string passport_number, int position_id, byte[] photo, int Original_staff_id, string Original_full_name, string Original_passport_series, string Original_passport_number, int Original_position_id) {
-            return this.Update(Original_staff_id, full_name, passport_series, passport_number, position_id, photo, Original_staff_id, Original_full_name, Original_passport_series, Original_passport_number, Original_position_id);
+        public virtual int Update(string full_name, string passport_series, string passport_number, int position_id, byte[] photo, string employee_comments, int Original_staff_id, string Original_full_name, string Original_passport_series, string Original_passport_number, int Original_position_id) {
+            return this.Update(Original_staff_id, full_name, passport_series, passport_number, position_id, photo, employee_comments, Original_staff_id, Original_full_name, Original_passport_series, Original_passport_number, Original_position_id);
         }
     }
     
@@ -6026,7 +6171,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(КазиноDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(КазиноDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._positionsTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Positions.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -6090,7 +6235,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(КазиноDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(КазиноDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._positionsTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Positions.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -6148,7 +6293,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(КазиноDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(КазиноDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._gameParticipationTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.GameParticipation.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -6230,7 +6375,7 @@ SELECT staff_id, full_name, passport_series, passport_number, position_id, photo
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(КазиноDataSet dataSet) {
+        public virtual int UpdateAll(КазиноDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

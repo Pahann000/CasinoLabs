@@ -121,9 +121,8 @@ namespace CasinoLabs
             string sql = @"
                 SELECT 
                     p.player_id,
-                    p.full_name,
-                    p.phone,
-                    p.passport_series + ' ' + p.passport_number AS [Паспорт]";
+                    p.full_name
+                    AS [Паспорт]";
 
             if (radioButtonDet_Phone.Checked)
             {
@@ -497,5 +496,9 @@ namespace CasinoLabs
             textBoxStartTime.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
+        private void toolStripStatusLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
